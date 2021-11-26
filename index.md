@@ -26,10 +26,20 @@ Leming Shen is currently a undergraduate student of [School of Cyber Science and
 # Projects
 
 -   A LISP-like made-up programming language interpreter. (Java)<br>[[Notes](/assets/project/mua/note.pdf)]
--   A MIPS assembly language interpreter. (C#)
--   A micro epidemic management web application. (Python & Vue.js)
--   A book injury system based on web spider. (Java)
--   A college teaching assistance web platform. (Python & Bootstrap)
--   An IoT device management and monitoring web platform. (Python & React.js)
--   A general merchandise vertical search engine. (Java, Python & Vue.js)
--   A distributed mini database system. (C, C++, Java)
+-   A MIPS assembly language interpreter. (C#)<br>
+    [[Report](/assets/project/mips/report.pdf)] [[Demo Video](https://www.youtube.com/watch?v=ojoF5fU5qj8&t=51s)]
+-   A micro epidemic management web application. (Python & Vue.js)<br>[[Design Report](/assets/project/epidemic/design.pdf)] [[Requirement Report](/assets/project/epidemic/requirement.pdf)] [[Test Report](/assets/project/epidemic/test.pdf)]
+-   A book injury system based on web spider. (Java)<br>[[Report](/assets/project/java/report.pdf)]
+-   A college teaching assistance web platform. (Python & Bootstrap)<br>[[All the reports](https://blog.csdn.net/james_bond_slm/category_10787367.html)]
+-   An IoT device management and monitoring web platform. (Python & React.js)<br>
+    [[Design Report](/assets/project/iot/design.pdf)] [[Architecture Design](/assets/project/iot/architecture.pdf)] [[Database Design](/assets/project/iot/database.pdf)] [[Interface Design](/assets/project/iot/interface.pdf)] [[Test Report](/assets/project/iot/test.pdf)] [[User's Manual](/assets/project/iot/user.pdf)] [[Project Summary Report](/assets/project/iot/summary.pdf)]
+    [[Demo Video](https://www.youtube.com/watch?v=WpGSmb-u3ps)]
+-   A general merchandise vertical search engine. (Java, Python & Vue.js)<br>[[Project Plan](/assets/project/search/plan.pdf)] [[Requirement Report](/assets/project/search/require.pdf)] [[Test Report](/assets/project/search/test.pdf)]
+-   A distributed mini database system. (C, C++, Java)<br>[[Design Report](/assets/project/sql/design.pdf)]
+
+# Contact
+
+-   ✉️ lemingshen@zju.edu.cn & ZJU.SLM@gmail.com
+-   📞 (+86) 15381145750
+-   🏠School of Cyber Science and Technology, Zhejiang University, Xihu District, Hangzhou, Zhejiang Province, China
+-   <iframe src="https://j.map.baidu.com/60/Agr"></iframe>
