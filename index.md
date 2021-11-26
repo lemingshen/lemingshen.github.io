@@ -1,39 +1,35 @@
-# Leming Shen
+# Biography
 
-You can use the [editor on GitHub](https://github.com/lemingshen/lemingshen.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Leming Shen is currently a undergraduate student of [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/) at [Zhejiang University](https://www.zju.edu.cn/). And he joined [Prof. Jinsong Han](https://person.zju.edu.cn/hanjinsong)'s research group in 2020, mainly focusing on IoT Security & Wireless Sensing. He received high school degree from [Hang Zhou Xuejun High School](https://hzxjhs.hzedu.gov.cn/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Research Interests
 
-### Markdown
+-   IoT Security
+-   Wireless Sensing
+-   IoT + AI Systems and Applications
+-   Mobile Computing
+-   User Authentication
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Education
 
-```markdown
-Syntax highlighted code block
+-   B.S. degree from _Zhejiang University_ (2022)
+-   High School Degree from _Hang Zhou Xuejun High School_ (2018)
+-   junior high school degree from _Hang Zhou Wenhui Junior School_ (2015)
 
-# Header 1
+# Publications
 
-## Header 2
+-   **<font color=red>[ICDCS'21]</font> MandiPass: Secure and Usable User Authentication via Earphone IMU**, Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Xian Xu, Kui Ren <br>
+    [[Paper](/assets/publication/mandipass/paper.pdf)] [[Slides](/assets/publication/mandipass/ppt.pptx)] [[Video](https://www.youtube.com/watch?v=N0pZDBmpZ_A)]
 
-### Header 3
+-   **<font color=red>[S&P'22]</font> (under review) HELMattack: Manipulating Trajectory of Actuation Systems via Acoustic Transduction Attacks on IMU**, Ming Gao, Lingfeng Zhang, **Leming Shen**, Yimin Li, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren <br> [Paper] [Slides] [Video]
 
--   Bulleted
--   List
+# Projects
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lemingshen/lemingshen.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+-   A LISP-like made-up programming language interpreter. (Java)<br>[[Notes](/assets/project/mua/note.pdf)]
+-   A MIPS assembly language interpreter. (C#)
+-   A micro epidemic management web application. (Python & Vue.js)
+-   A book injury system based on web spider. (Java)
+-   A college teaching assistance web platform. (Python & Bootstrap)
+-   An IoT device management and monitoring web platform. (Python & React.js)
+-   A general merchandise vertical search engine. (Java, Python & Vue.js)
+-   A distributed mini database system. (C, C++, Java)
