@@ -1,3 +1,4 @@
+<head><meta name="msvalidate.01" content="7897E13BA004324AF5BBEF8A30C3612A" /></head>
 # Biography
 
 Leming Shen is currently a undergraduate student of [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/) at [Zhejiang University](https://www.zju.edu.cn/). And he joined [Prof. Jinsong Han](https://person.zju.edu.cn/hanjinsong)'s research group in 2020, mainly focusing on IoT Security & Wireless Sensing. He received high school degree from [Hang Zhou Xuejun High School](https://hzxjhs.hzedu.gov.cn/).
