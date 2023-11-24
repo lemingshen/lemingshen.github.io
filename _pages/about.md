@@ -68,7 +68,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Teaching
 
--   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall.
+-   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall, 2023 Fall.
 -   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring.
 
 ## Contact
