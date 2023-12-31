@@ -25,9 +25,14 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 -   High School Degree from _Hang Zhou Xuejun High School_ (2018)
 
 <br>
+
 # Publications
+
 ---
+
 ### Conference
+
+-  **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [PDF]
 
 -   **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
 
