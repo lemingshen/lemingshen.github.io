@@ -37,6 +37,7 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 </head>
 
 <body>
@@ -110,9 +111,12 @@
     </section>
 
     <section class="hero teaser">
-        <div class="container is-max-desktop">
+        <div class="container is-max-desktop is-centered content">
           <img src="./static/images/fedconv_overview.gif"/>
-        </div>
+          <h5 class="subtitle has-text-centered">
+          The architecture of <span class="dnerf">FedConv</span>
+                                </h5>
+                            </div>
     </section>
 
     <section class="section">
@@ -123,38 +127,207 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Federated Learning (FL) facilitates collaborative training of a shared global model without exposing clients' private data. In practical FL systems, clients (e.g., edge servers, smartphones, and wearables) typically have disparate system resources. Conventional FL, however, adopts a one-size-fits-all solution, where a homogeneous large global model is transmitted to and trained on each client, resulting in an overwhelming workload for less capable clients and starvation for other clients. To address this issue, we propose FedConv, a client-friendly FL framework, which minimizes the computation and memory burden on resource-constrained clients by providing heterogeneous customized sub-models. FedConv features a novel learning-on-model paradigm that learns the parameters of the heterogeneous sub-models via convolutional compression. Unlike traditional compression methods, the compressed models in FedConv can be directly trained on clients without decompression. To aggregate the heterogeneous sub-models, we propose transposed convolutional dilation to convert them back to large models with a unified size while retaining personalized information from clients. The compression and dilation processes, transparent to clients, are optimized on the server leveraging a small public dataset. Extensive experiments on six datasets demonstrate that FedConv outperforms state-of-the-art FL systems in terms of model accuracy (by more than 35% on average), computation and communication overhead (with 33% and 25% reduction, respectively)
+                            Federated Learning (FL) facilitates collaborative training of a shared global model without exposing clients' private data. In practical FL systems, clients (e.g., edge servers, smartphones, and wearables) typically have disparate system resources. Conventional
+                            FL, however, adopts a one-size-fits-all solution, where a homogeneous large global model is transmitted to and trained on each client, resulting in an overwhelming workload for less capable clients and starvation for other
+                            clients. To address this issue, we propose FedConv, a client-friendly FL framework, which minimizes the computation and memory burden on resource-constrained clients by providing heterogeneous customized sub-models. FedConv
+                            features a novel learning-on-model paradigm that learns the parameters of the heterogeneous sub-models via convolutional compression. Unlike traditional compression methods, the compressed models in FedConv can be directly
+                            trained on clients without decompression. To aggregate the heterogeneous sub-models, we propose transposed convolutional dilation to convert them back to large models with a unified size while retaining personalized information
+                            from clients. The compression and dilation processes, transparent to clients, are optimized on the server leveraging a small public dataset. Extensive experiments on six datasets demonstrate that FedConv outperforms state-of-the-art
+                            FL systems in terms of model accuracy (by more than 35% on average), computation and communication overhead (with 33% and 25% reduction, respectively)
                         </p>
-                            </div>
-                        </div>
                     </div>
-                    <!--/ Abstract. -->
+                </div>
+            </div>
+            <!--/ Abstract. -->
     </section>
 
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Introduction. -->
+            <div class="columns">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Introduction</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Federated Learning (FL) allows mobile devices to collaboratively train a shared global model without exposing their private data. In each communication round, clients keep their private data locally and only upload their model parameters or gradients
+                            to a server after local training. The server then orchestrates model aggregation and updates the global model for the next round.
+                        </p>
+                        <p>
+                            In real-world deployments, federated clients typically have diverse system resources, calling for heterogeneous models with different sizes. As shown in Fig. 1, high-end PCs can support large models, while wearables cannot. Simply assigning the smallest
+                            affordable model to all clients results in resource under-utilization and sub-optimal performance.
+                        </p>
+                        <div class="content has-text-centered">
+                            <img src="./static/images/model_heterogeneity.png" width="50%" />
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 1: Heterogeneous models in federated learning.</h6>
+                        <p>
+                            we propose <span class="dnerf">FedConv</span>, a client-friendly FL framework for heterogeneous models based on a new <i>learning-on-model</i> paradigm. <i>The key insight is that convolution, a technique to extract effective features from data, can also compress large models via various receptive fields while preserving crucial information.</i>                            In <span class="dnerf">FedConv</span>, the server performs <i>convolutional compression</i> on the global model to learn parameters of diverse sub-models according to clients' resource budgets. In model aggregation, the server
+                            first uses transposed convolution (TC) to transform heterogeneous client models into large models that have the same size as the global model. Then, the server assigns different learned <i>weight vectors</i> to these dilated
+                            models and aggregates them. <span class="dnerf">FedConv</span> optimizes the model compression, dilation, and aggregation processes by leveraging a small dataset on the server that can be obtained via crowdsourcing, or voluntarily
+                            shared by users without compromising their privacy. Therefore, our system does not incur extra communication or computation overhead for resource-constrained clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Introduction. -->
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Motivation. -->
+            <div class="columns">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Motivation</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Fig. 2 shows the convolution-based compression process. To showcase that a compressed model generated by <i>convolutional compression</i> (compression layers) can effectively extract features from the input data, we compress
+                            a pre-trained ResNet18 model on the CIFAR10 dataset at a shrinkage ratio of 0.75. We then select the top-4 and top-3 feature maps with the highest importance outputted by a convolutional layer (measured by IG) from the large
+                            model and the sub-model, respectively. As shown in Fig. 2, both the large model and the sub-model can learn and focus on the key features (<i>e.g.</i>, the deer's body, head, and horn). Moreover, compared with the large model,
+                            the first two feature maps from the sub-model pay more attention (deeper color) to the deer's body and ears. The third feature map can be regarded as a fusion of the last two feature maps from the large model, as it focuses
+                            on both the body and head of the deer. This observation indicates that the feature extraction capability of the large model can be effectively preserved and transferred to the sub-model via <i>convolutional compression</i>.
+                            Besides, the accuracy of the sub-model only decreases by 0.19% and the mutual information between the parameters of the large model and the sub-model is 3.09, which is much higher than that of the pruned model. This indicates
+                            that our proposed <i>convolutional compression</i> method can effectively minimize information loss after model compression.
+                        </p>
+                        <div class="content has-text-centered">
+                            <img src="./static/images/convolutional_compression.png" width="85%" />
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 2: Convolutional compression process.</h6>
+                    </div>
+                </div>
+            </div>
+            <!--/ Motivation. -->
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- overview. -->
+            <div class="columns">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">System Overview</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Fig. 3 illustrates the architecture of <span class="dnerf">FedConv</span>, consisting of three main modules: <i>convolutional compression</i>, <i>transposed convolutional dilation</i>, and <i>weighted average aggregation</i>.
+                        </p>
+                        <p>
+                            The server first initializes a global model with an estimated memory requirement and records a set of shrinkage ratios (SR) reported by each client based on their resource profiles (①). In the first communication round, the server pre-trains the global
+                            model for several epochs with a server-side dataset to gain a better global view of the data distribution. Then, based on the SRs, a set of fine-tuned <i>convolution parameters</i> are used to compress
+                            the global model with the <i>convolutional compression</i> module, and generate heterogeneous sub-models (②). Afterwards, the server sends the heterogeneous sub-models to federated clients (③). Clients then perform several
+                            epochs of local training with their private training dataset to fine-tune the received sub-models (④), and then upload the updated parameters to the server (⑤). After that, the server performs the <i>transposed convolutional dilation</i>,
+                            where different <i>transposed convolution parameters</i> are used to dilate the sub-models to a set of large models that have the same size as the global model (⑥). Finally, the server applies the <i>weighted average aggregation</i>                            to aggregate the dilated models with the learned weights (⑦).
+                        </p>
+                        <p>
+                            In <span class="dnerf">FedConv</span>, the compression and dilation operations are transparent to clients and performed by the powerful server, which can be seamlessly integrated into conventional FL systems where clients only
+                            need to perform local training.
+                        </p>
+
+                        <div class="content has-text-centered">
+                            <img src="./static/images/system_overview.png" />
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 3: Convolutional compression process.</h6>
+                    </div>
+                </div>
+            </div>
+            <!--/ Overview. -->
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Evaluation. -->
+            <div class="columns">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Evaluation</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We evaluate the overall performance of <span class="dnerf">FedConv</span> with heterogeneous models and data distribution.
+                        </p>
+                    </div>
+
+                    <h4 class="title is-4">Global Model Accuracy</h4>
+                    <div class="content has-text-justified">
+                        <p>
+                            We first evaluate the inference accuracy of the aggregated global model to demonstrate its generalizability. Standalone and FedMD are excluded because they do not create global models. Fig. 4(a) shows the global model accuracy under the same degree of
+                            heterogeneous data (<span>`\alpha=0.1`</span>). Serveralone achieves a higher global model accuracy than the baselines in most cases, as the server-side data for training and testing are both IID.
+                            <span class="dnerf">FedConv</span> achieves average improvements of 20.5%, 13.8%, and 10.5% when compared with pruning-based methods (Hermes and TailorFL), parameter sharing-based method (HeteroFL and FedRolex) and other baselines
+                            (FedAvg and LotteryFL), respectively. Since we assign the smallest affordable model to all clients in FedAvg, the client models have an insufficient number of parameters for training. Therefore, <span class="dnerf">FedConv</span>                            can outperform FedAvg even with IID data. This shows the superior generalization performance of the global in <span class="dnerf">FedConv</span>.
+                        </p>
+                        <p>
+                            Moreover, Fig. 5(a) shows the global model accuracy of <span class="dnerf">FedConv</span> and all baselines across different data heterogeneity on all datasets. We can see that the performance enhancement of <span class="dnerf">FedConv</span>                            becomes more significant as `\alpha` decreases, meaning that <span class="dnerf">FedConv</span> can better cope with the increased data heterogeneity. Although <span class="dnerf">FedConv</span> does not obviously outperform
+                            FedAvg with homogeneous data, it exhibits better generalizability and robustness in the global model under heterogeneous data. <span class="dnerf">FedConv</span> also provides better personalization performance for clients.
+                            The performance improvements of the global model stem from our <i>convolutional compression</i> and <i>TC dilation</i> methods. They facilitate the information embedded in the global model being preserved and transferred from
+                            the server to clients through our <i>learning-on-model</i> approach.
+                        </p>
+                        <div class="content has-text-centered">
+                            <img src="./static/images/accuracy1.png" />
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 4: Accuracy comparison under model heterogeneity (`\alpha=0.1`).</h6>
+                    </div>
+
+                    <h4 class="title is-4">Client Model Accuracy</h4>
+                    <div class="content has-text-justified">
+                        <p>
+                            To evaluate the personalization performance of <span class="dnerf">FedConv</span>, we measure the inference accuracy of each client model with client-side test datasets and report the average value. Fig. 4(b) shows that with
+                            the same heterogeneous data settings, <span class="dnerf">FedConv</span> outperforms baselines (FedAvg, LotteryFL, Hermes, TailorFL, HeteroFL, and FedRolex) with accuracy improvements ranging from 8.4% to 50.6%. In Serveralone,
+                            when evaluating the global model using the client-side non-IID data, the accuracy of the client model drops below that of most baseline systems. This is because, in <span class="dnerf">FedConv</span>, the server-side data occupies
+                            a small portion of the entire dataset (5%). Therefore, Serveralone's global model hasn't seen sufficient data, leading to degraded performance on the client-side non-IID data.
+                        </p>
+                        <p>
+                            Additionally, Fig. 5(b) shows the client model accuracy of <span class="dnerf">FedConv</span> and all baselines with different data heterogeneity on all datasets. It can be observed that the performance disparities become more
+                            substantial as `\alpha` decreases, implying that <span class="dnerf">FedConv</span> is more robust and can achieve consistently high accuracy across diverse data distribution. The performance gain of
+                            <span class="dnerf">FedConv</span> with heterogeneous data stems from the TC dilation process, where distinct <i>TC parameters</i> are assigned to each uploaded client model on the server. By employing varying <i>TC parameters</i>,
+                            the personalization information from clients will be preserved within the rescaled large models, which is then aggregated into the global model. Besides, we can see from Fig. 4(b) that, with sensing heterogeneity in the HARBox
+                            dataset, <span class="dnerf">FedConv</span> achieves a better and more stable performance. However, when `\alpha` is small (<i>e.g.</i>, `\alpha\in\{0.05, 0.1\}` on CIFAR10), the client model accuracy of FedMD is higher than
+                            <span class="dnerf">FedConv</span>. The better performance stems from the distilled knowledge shared by all clients. Nonetheless, the downside is that it imposes excessive communication and computational overhead on clients.
+                            By contrast, <span class="dnerf">FedConv</span> can achieve comparable personalization performance without an extra burden on clients. In practice, we can further improve the personalization performance by adding task-specific
+                            layers.
+                        </p>
+                        <div class="content has-text-centered">
+                            <img src="./static/images/accuracy2.png" />
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 5: The inference accuracy of aggregated global models and client models on different datasets.</h6>
+                    </div>
+                </div>
+            </div>
+            <!--/ Evaluation. -->
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Conclusion. -->
+            <div class="columns">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Conclusion</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We propose <span class="dnerf">FedConv</span>, a client-friendly federated learning framework for heterogeneous clients, aiming to minimize the system overhead on resource-constrained mobile devices. <span class="dnerf">FedConv</span>                            contributes three key technical modules: (1) a novel model compression scheme that generates heterogeneous sub-models with <i>convolutional compression</i> on the global model; (2) a <i>transposed convolutional dilation</i>                            module that converts heterogeneous client models back to large models with a unified size; and (3) a <i>weighted average aggregation</i> scheme that fully leverages personalization information of client models to update the
+                            global model. Extensive experiments demonstrate that <span class="dnerf">FedConv</span> outperforms SOTA baselines in terms of inference accuracy with much lower computation and communication overhead for FL clients. We believe
+                            the proposed <i>learning-on-model</i> paradigm is worthy of further exploration and can potentially benefit other FL tasks where heterogeneous sub-models can be generated to retain the information of a global model.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Conclusion. -->
+    </section>
 
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+            <pre><code>@inproceedings{shen2024fedconv,
+  title={FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients},
+  author={Shen, Leming and Yang, Qiang and Cui, Kaiyan and Zheng, Yuanqing and Wei, Xiao-yong and Liu, Jianwei and Han, Jinsong},
+  booktitle={Proceedings of the 22st Annual International Conference on Mobile Systems, Applications and Services},
+  pages={1--14},
+  year={2024}
 }</code></pre>
         </div>
     </section>
 
 
     <footer class="footer">
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <div class="content">
-                        <p>
-                            Website template borrowed from <a rel="license" href="https://nerfies.github.io/">NeRFies</a>.
-                        </p>
-                    </div>
-                </div>
+        <div class="columns is-centered">
+            <div class="content">
+                <p>Website template borrowed from <a rel="license" href="https://nerfies.github.io/">NeRFies</a>.</p>
             </div>
+        </div>
         </div>
     </footer>
 
