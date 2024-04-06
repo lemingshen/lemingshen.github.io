@@ -246,20 +246,20 @@
                     <div class="content has-text-justified">
                         <p>
                             We first evaluate the inference accuracy of the aggregated global model to demonstrate its generalizability. Standalone and FedMD are excluded because they do not create global models. Fig. 4(a) shows the global model accuracy under the same degree of
-                            heterogeneous data (<span>`\alpha=0.1`</span>). Serveralone achieves a higher global model accuracy than the baselines in most cases, as the server-side data for training and testing are both IID.
+                            heterogeneous data (<span>𝛼=0.1</span>). Serveralone achieves a higher global model accuracy than the baselines in most cases, as the server-side data for training and testing are both IID.
                             <span class="dnerf">FedConv</span> achieves average improvements of 20.5%, 13.8%, and 10.5% when compared with pruning-based methods (Hermes and TailorFL), parameter sharing-based method (HeteroFL and FedRolex) and other baselines
                             (FedAvg and LotteryFL), respectively. Since we assign the smallest affordable model to all clients in FedAvg, the client models have an insufficient number of parameters for training. Therefore, <span class="dnerf">FedConv</span>                            can outperform FedAvg even with IID data. This shows the superior generalization performance of the global in <span class="dnerf">FedConv</span>.
                         </p>
                         <p>
-                            Moreover, Fig. 5(a) shows the global model accuracy of <span class="dnerf">FedConv</span> and all baselines across different data heterogeneity on all datasets. We can see that the performance enhancement of <span class="dnerf">FedConv</span>                            becomes more significant as `\alpha` decreases, meaning that <span class="dnerf">FedConv</span> can better cope with the increased data heterogeneity. Although <span class="dnerf">FedConv</span> does not obviously outperform
-                            FedAvg with homogeneous data, it exhibits better generalizability and robustness in the global model under heterogeneous data. <span class="dnerf">FedConv</span> also provides better personalization performance for clients.
-                            The performance improvements of the global model stem from our <i>convolutional compression</i> and <i>TC dilation</i> methods. They facilitate the information embedded in the global model being preserved and transferred from
-                            the server to clients through our <i>learning-on-model</i> approach.
+                            Moreover, Fig. 5(a) shows the global model accuracy of <span class="dnerf">FedConv</span> and all baselines across different data heterogeneity on all datasets. We can see that the performance enhancement of <span class="dnerf">FedConv</span>                            becomes more significant as 𝛼 decreases, meaning that <span class="dnerf">FedConv</span> can better cope with the increased data heterogeneity. Although <span class="dnerf">FedConv</span> does not obviously outperform FedAvg
+                            with homogeneous data, it exhibits better generalizability and robustness in the global model under heterogeneous data. <span class="dnerf">FedConv</span> also provides better personalization performance for clients. The performance
+                            improvements of the global model stem from our <i>convolutional compression</i> and <i>TC dilation</i> methods. They facilitate the information embedded in the global model being preserved and transferred from the server to
+                            clients through our <i>learning-on-model</i> approach.
                         </p>
                         <div class="content has-text-centered">
                             <img src="./static/images/accuracy1.png" />
                         </div>
-                        <h6 class="subtitle has-text-centered">Figure 4: Accuracy comparison under model heterogeneity (`\alpha=0.1`).</h6>
+                        <h6 class="subtitle has-text-centered">Figure 4: Accuracy comparison under model heterogeneity (𝛼=0.1).</h6>
                     </div>
 
                     <h4 class="title is-4">Client Model Accuracy</h4>
@@ -272,10 +272,10 @@
                         </p>
                         <p>
                             Additionally, Fig. 5(b) shows the client model accuracy of <span class="dnerf">FedConv</span> and all baselines with different data heterogeneity on all datasets. It can be observed that the performance disparities become more
-                            substantial as `\alpha` decreases, implying that <span class="dnerf">FedConv</span> is more robust and can achieve consistently high accuracy across diverse data distribution. The performance gain of
+                            substantial as 𝛼 decreases, implying that <span class="dnerf">FedConv</span> is more robust and can achieve consistently high accuracy across diverse data distribution. The performance gain of
                             <span class="dnerf">FedConv</span> with heterogeneous data stems from the TC dilation process, where distinct <i>TC parameters</i> are assigned to each uploaded client model on the server. By employing varying <i>TC parameters</i>,
                             the personalization information from clients will be preserved within the rescaled large models, which is then aggregated into the global model. Besides, we can see from Fig. 4(b) that, with sensing heterogeneity in the HARBox
-                            dataset, <span class="dnerf">FedConv</span> achieves a better and more stable performance. However, when `\alpha` is small (<i>e.g.</i>, `\alpha\in\{0.05, 0.1\}` on CIFAR10), the client model accuracy of FedMD is higher than
+                            dataset, <span class="dnerf">FedConv</span> achieves a better and more stable performance. However, when 𝛼 is small (<i>e.g.</i>, 𝛼 ∈ {0.05, 0.1} on CIFAR10), the client model accuracy of FedMD is higher than
                             <span class="dnerf">FedConv</span>. The better performance stems from the distilled knowledge shared by all clients. Nonetheless, the downside is that it imposes excessive communication and computational overhead on clients.
                             By contrast, <span class="dnerf">FedConv</span> can achieve comparable personalization performance without an extra burden on clients. In practice, we can further improve the personalization performance by adding task-specific
                             layers.
