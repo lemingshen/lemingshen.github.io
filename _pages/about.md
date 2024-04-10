@@ -60,8 +60,10 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Professional Services
 
 - Program committee of MobiSys 2024 Artifact Evaluation.
-- Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023
-- Invited reviewer of ACM IMWUT/UbiComp 2023
+- Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
+- Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
+- Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
+- Invited reviewer of ACM IMWUT/UbiComp 2023.
 
 ## Honors & Awards
 
@@ -75,7 +77,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Teaching
 
 -   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall, 2023 Fall.
--   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring.
+-   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring, 2024 Spring.
 
 ## Contact
 
