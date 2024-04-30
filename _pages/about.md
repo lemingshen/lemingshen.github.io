@@ -32,7 +32,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> (Acceptance ratio: 43/263=16.3%) (Rejected by MobiCom with 4, 3, 3 and 3 points before rebuttal) <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [Slides]
+- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> (Acceptance ratio: 43/263=16.3%) (Rejected by MobiCom with 4, 3, 3 and 3 points before rebuttal) <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [Slides] &nbsp;<img src="/images/available.png" height=20, width=20>&nbsp;<img src="/images/functional.png" height=20, width=20>&nbsp;<img src="/images/reusable.png" height=20, width=20>
 
 -  **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
 
