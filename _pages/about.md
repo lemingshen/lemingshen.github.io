@@ -69,6 +69,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
+-   ACM MobiSys Student Travel Grant, 2024.
 -   Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
 -   Second Prize, Network Technology Challenges, China College Computing Contest, 2020.
 -   First Prize, east China division, Network Technology Challenges, China College Computing Contest, 2020.
