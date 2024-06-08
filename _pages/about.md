@@ -10,14 +10,14 @@ redirect_from:
 
 # Biography
 ---
-Leming Shen（沈乐明） is currently a second-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Edge/Mobile Computing, Wireless Sensing, IoT Application & Security.
+Leming Shen（沈乐明）is currently a second-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Research Interests
 -   Mobile/Edge Computing
+-   AIoT Applications
 -   Wireless Sensing
--   AIoT & Security
 
 ### Education
 
@@ -32,7 +32,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [Slides] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%) 
+- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [[Slides](/assets/publication/conference/fedconv/slides.pdf)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%) 
 
 -  **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
 
@@ -69,6 +69,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
+-   ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.
 -   ACM MobiSys Student Travel Grant, 2024.
 -   Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
 -   Second Prize, Network Technology Challenges, China College Computing Contest, 2020.
