@@ -65,7 +65,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
 - Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
 - Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
-- Invited reviewer of ACM IMWUT/UbiComp 2023.
+- Invited reviewer of ACM IMWUT/UbiComp 2023. 2024.
 
 ## Honors & Awards
 
