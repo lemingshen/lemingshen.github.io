@@ -42,9 +42,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Journal
 
--   **<font color=blue>[TMC'23]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
+- **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
--   **<font color=blue>[TMC'22]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren <br>
+-   **<font color=blue>[TMC]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
+
+-   **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren <br>
     [[PDF](/assets/publication/journal/mandipass/paper.pdf)]
 
 ### Others
