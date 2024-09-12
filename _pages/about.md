@@ -10,7 +10,7 @@ redirect_from:
 
 # Biography
 ---
-Leming Shen（沈乐明）is currently a second-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
+Leming Shen（沈乐明）is currently a third-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
@@ -63,7 +63,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
-- Program committee of MobiSys 2024 Artifact Evaluation.
+- Program committee of ACM SenSys 2024 Artifact Evaluation.
+- Program committee of ACM MobiSys 2024 Artifact Evaluation.
 - Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
 - Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
 - Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
@@ -84,6 +85,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 -   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall, 2023 Fall.
 -   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring, 2024 Spring.
+-   Teaching Assistant, COMP5434 Big Data Computing, 2024 Fall.
 
 ## Contact
 
