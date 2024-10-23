@@ -51,10 +51,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Others
 
+- **<font color=blue>[MobiCom'24]</font> Poster: IoTCoder: A Copilot for IoT Application Development** <br> **Leming Shen**, Yuanqing Zheng <br> [[PDF](/assets/publication/others/IoTCoder/paper.pdf)]
+
 -   **<font color=blue>[ICDCS'23]</font> PhD Symposium: FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing** <br> **Leming Shen**, Yuanqing Zheng <br> [[PDF](/assets/publication/others/FedDM/paper.pdf)]
 
--   **<font color=blue>[SenSys'22]</font> Poster Abstract: Integrated Sensing and Communication between
-    Daily Devices and mmWave Radars** <br> Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Jinsong Han<br> [[PDF](/assets/publication/others/mmRipple/paper.pdf)] [[Video](https://www.youtube.com/watch?v=BLBkSKZUIHc)]
+-   **<font color=blue>[SenSys'22]</font> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars** <br> Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Jinsong Han<br> [[PDF](/assets/publication/others/mmRipple/paper.pdf)] [[Video](https://www.youtube.com/watch?v=BLBkSKZUIHc)]
 
 ## Patents
 
