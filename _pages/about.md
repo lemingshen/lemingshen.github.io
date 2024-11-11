@@ -10,11 +10,12 @@ redirect_from:
 
 # Biography
 ---
-Leming Shen（沈乐明）is currently a third-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [School of Cyber Science and Technology](https://icsr.zju.edu.cn/) and [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
+Leming Shen（沈乐明）is currently a third-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Large Language Models, Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Research Interests
+-   Large Language Models
 -   Mobile/Edge Computing
 -   AIoT Applications
 -   Wireless Sensing
@@ -73,7 +74,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
--   ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.
+-   **ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.**
+-   **ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.**
 -   ACM MobiSys Student Travel Grant, 2024.
 -   Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
 -   Second Prize, Network Technology Challenges, China College Computing Contest, 2020.
