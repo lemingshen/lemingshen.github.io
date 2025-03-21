@@ -201,37 +201,32 @@
                         <div class="content has-text-centered">
                             <img src="./assets/blueprint.jpg" width="50%" />
                         </div>
-                        <h6 class="subtitle has-text-centered">Figure 1: Illustration of how LLMs can sense and interact with the physical world in AIoT applications.</h6>
+                        <h6 class="subtitle has-text-centered">Figure 1: Existing code LLMs need to transmit sensitive data to remote servers. In contrast, GPIoT features three local SLMs to protect user privacy and reduce query costs.</h6>
                         <p>
-                            <strong>However, current LLMs on AIoT tasks fall short in supporting AIoT applications:</strong>
-                            <ul>
-                                <li>
-                                    The <strong>trustworthiness</strong> of the inference results is compromised since the inference process is performed inside a "black box" and opaque to users. Thus, the robustness of the applications or the correctness of the inference results are hard to verify.
-                                </li>
-                                <li>
-                                    Transmitting the raw or intermediate sensor data from user devices to LLM servers raises <strong>privacy concerns</strong>, incurs prohibitive query fees, and increases response latency.
-                                </li>
-                                <li>
-                                    Sensor data typically exhibits <strong>extensive length and high dimensionality</strong>, making remote processing at LLM servers infeasible due to token limits. 
-                                </li>
-                            </ul>
-                            <strong>Ideally, the integration of LLMs with AIoT applications should be trustworthy, privacy-preserving, and communication-efficient.</strong>
+                            While powerful and promising, <strong>when confronted with IoT applications that require special domain knowledge, existing code LLMs tend to simply provide general solutions with sub-optimal performance</strong>. This is because they focus on general-purpose programming tasks rather than being tailored to any particular domain. Moreover, IoT-related knowledge and programs only occupy a small proportion of the datasets which code LLMs were trained on. Consequently, IoT terminologies will be assigned a lower priority during inference with the generated code less dedicated to the IoT domain. This motivates the following research question:
                         </p>
-                        <h3 style="color:red"><i>Can we leverage LLMs to synthesize programs to automatically fulfill AIoT application requirements?</i></h3>
+                        <h3 style="color:red"><i>Can we build a code LLM specially tailored for IoT application code generation tasks?</i></h3>
                         <p>
-                            This approach can 
+                            A potential approach can be Retrieval-Augmented Generation (RAG), which provides LLMs with retrieved domain knowledge to enhance their abilities in generating accurate and contextually relevant solutions. Existing works construct a sophisticated LLM+RAG agent to gradually generate code through multiple intermediate steps via prompts. Nonetheless, they suffer from three main problems.
                             <ul>
                                 <li>
-                                    <strong>Enhance the explainability and trustworthiness</strong> of the AIoT applications as the synthesized programs can be examined and interpreted by developers.
+                                    <strong>A powerful LLM</strong> with strong language comprehension capability is needed to learn from the retrieved knowledge. However, cloud LLMs (e.g., GPT-4) may suffer from <strong>bad network conditions, high costs, and privacy concerns</strong>, while local LLMs (e.g., Llama2-70b) have <strong>harsh requirements in system resources</strong> (e.g., memory and network).
                                 </li>
                                 <li>
-                                    <strong>Mitigate privacy concerns, and reduce the communication cost</strong> since the programs can be executed locally on user devices without offloading raw sensor data.
+                                    <strong>Complicated RAG designs</strong> (e.g., iterative retrieval) are mandatory to ensure the correctness and high relevance of the retrieved knowledge, with extended processing time. Otherwise, LLMs may fail to focus on the IoT context and still provide general solutions.
                                 </li>
                                 <li>
-                                    <strong>Efficiently process high-dimensional continuous sensor data</strong> without being limited by the token size or bounded by the round trip time over the network.
+                                    <strong>Meticulously designed prompts</strong> are required to ensure that outputs must strictly follow pre-defined formats (Lin et al., 2024), which is extremely challenging due to the hallucinations and unreliability of LLMs.
                                 </li>
                             </ul>
-                            To this end, we propose AutoIOT, a user-friendly natural language programming system based on LLMs. AutoIOT automatically identifies and retrieves the necessary domain knowledge over the Internet, intelligently synthesizes programs, and evolves the programs iteratively given sample inputs and ground truth. <strong>Surprisingly, we found that the synthesized programs can sometimes outperform some representative baselines and sample programs of recent academic papers.</strong>
+                        </p>
+                        <p>
+                            To tackle the above problems, we propose <strong>GPIoT</strong>, a code generation system tailored for IoT application development by fine-tuning local small language models1 (SLMs) on IoT-specialized text-generation datasets. This approach has the following benefits:
+                            <ul>
+                                <li>The system overhead, privacy leakage, and network instability can be mitigated, as SLMs have smaller sizes and can be locally deployed without incurring heavy resource burdens.</li>
+                                <li>SLMs tuned on IoT-specialized datasets can generate responses with significantly enhanced quality and higher relevance to the IoT domain.</li>
+                                <li>As our tuning datasets are well-structured text data, the tuned SLMs can produce intermediate outputs following the expected format with enhanced stability and avoid hallucinations.</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -247,25 +242,17 @@
                     <h2 class="title is-3">Motivation</h2>
                     <div class="content has-text-justified">
                         <p>
-                            The latest LLMs have demonstrated extraordinary proficiency in generating code snippets. For example, Mercury leverages LLMs to generate code for well-defined programming tasks. <strong>Is it feasible to instruct LLMs to synthesize programs that can tackle AIoT tasks? Our preliminary results show that it is possible yet extremely challenging for LLMs to synthesize functionally correct programs for AIoT tasks.</strong> Taking heartbeat detection as an example, as depicted in Fig. 2. When we instruct the LLM to generate a program to process raw ECG waveform and detect heartbeats, the LLM can only generate a few null functions without concrete implementation or import some nonexistent packages.
+                            Existing code LLMs aim to synthesize programs and enhance software development efficiency and accuracy. While they perform well on general and simple programming tasks (e.g., sorting algorithms), they often struggle with complex problems in the IoT domain. For example, when prompted to design an R-peak detection method for electrocardiogram (ECG) data, existing code LLMs can only use the <code>find_peaks()</code> function, which adopts a general peak detection algorithm rather than a dedicated one tailored for ECG data (e.g., Pan-Tompkins). The underlying reason is that IoT knowledge and programs only occupy a small proportion of the training dataset of code LLMs. As a result, despite being presented with abundant IoT terminologies in the prompt, LLMs still tend to prioritize and respond with more general words, due to their higher similarity (shorter distance in Fig. 2(a)) within the vector representation space.
                         </p>
                         <div class="content has-text-centered">
-                            <img src="./assets/direct_code_generation.jpg" width="45%" />
+                            <img src="./assets/motivation.jpg" width="45%" />
                         </div>
-                        <h6 class="subtitle has-text-centered">Figure 2: An example of direct code generation.</h6>
+                        <h6 class="subtitle has-text-centered">Figure 2: (a) Existing LLMs tend to prioritize general terms; (b) LLM+RAG systems require multiple cascaded agents.</h6>
                         <p>
-                            To fill this gap, we develop an LLM-driven automated natural language programming system named AutoIOT to three key modules:
-                            <ul>
-                                <li>
-                                    <strong>Background knowledge retrieval</strong> module that automatically collects domain knowledge from the Internet for in-context learning.
-                                </li>
-                                <li>
-                                    <strong>Automated program synthesis</strong> module that emulates the program development lifecycle via CoT prompting. This module decomposes an AIoT task into several subtasks and generates corresponding functional code snippets.
-                                </li>
-                                <li>
-                                    <strong>Code improvement</strong> module that executes the synthesized program and feeds the compiler and interpreter feedback to the LLM, facilitating iterative code correction and improvement
-                                </li>
-                            </ul>
+                            LLM+RAG methods address this by retrieving domain knowledge for reference and establishing multiple cascaded agents to facilitate information transfer among modules. For example, in Fig. 2(b), multiple LLM-based agents are employed for different tasks during development (i.e., domain knowledge retrieval, task planning, coding, and debugging). Sophisticated prompt design and meticulously structured intermediate outputs are necessary to ensure that one agent's output can be accurately parsed and interpreted by another agent. We conduct a preliminary experiment by prompting MapCoder, a multi-agent-based LLM+RAG framework, to synthesize programs for R-peak detection. We repeatedly generate 100 distinct versions of the programs and analyze them through code review and execution. Surprisingly, we find that only 28% of the programs adopt appropriate IoT-related algorithms to perform R-peak detection. This is because LLM+RAG requires sophisticated RAG design and user prompts. Otherwise, the retrieved knowledge is less accurate and relevant to the IoT context, and LLMs may fail to focus on the IoT domain and still provide simple and general solutions. Moreover, this cascading process inevitably introduces noise and propagates errors, leading to a long self-recover time. More importantly, cloud LLMs suffer from bad network conditions, high costs, and privacy concerns.
+                        </p>
+                        <p>
+                            <strong>To overcome these challenges, GPIoT fine-tunes SLMs on IoT-specialized text-generation datasets, as SLMs have smaller sizes and can be locally deployed.</strong> Additionally, by steering the parameter distribution towards the IoT domain via tuning, SLMs can focus on IoT-related semantic context, generating highly relevant responses that follow pre-defined formats with enhanced stability.
                         </p>
                     </div>
                 </div>
@@ -281,11 +268,16 @@
                     <h2 class="title is-3">System Overview</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Fig. 3 illustrates the architecture of <span class="dnerf">AutoIOT</span>, consisting of three main modules: <i>background knowledge retrieval</i>, <i>automated program synthesis</i>, and <i>code improvement</i>.
+                            Fig. 3 illustrates the architecture of <span class="dnerf">GPIoT</span>, consisting of an offline tuning stage and an online processing stage.
                         </p>
-                        <p>
-                            Users can specify their requirements on AIoT applications in natural language (①). Then, the background knowledge retrieval module identifies a set of relevant terminologies (②) and searches over the Internet (③). With the retrieved domain-specific knowledge, the automated program synthesis module instructs the agent to draft an algorithm outline (④). The agent is then requested to elaborate on each step of the algorithm and produce a detailed design (⑤). Such a process decomposes a complex AIoT task into several manageable subtasks. Then, the agent is instructed to generate a code segment for each subtask (⑥). Afterward, the agent is requested to integrate the codes for subtasks and synthesize the final program (⑦). Next, the code self-improvement module executes the synthesized program and feeds the compiler and interpreter output back to the agent. The agent iteratively corrects syntax and semantics errors (⑧). With the obtained output from the synthesized program, AutoIOT explicitly instructs the agent to explore more advanced algorithms using the web search tool, aiming to optimize the program and improve the performance of inference tasks (⑨). After several iterations (④-⑨), AutoIOT will present the final program with detailed documentation (⑩). In addition, AutoIOT provides an interface for users to offer specific algorithms or instructions for code improvement.
-                        </p>
+                        <ul>
+                            <li>
+                                <strong>Offline Stage.</strong> The offline tuning stage (the left part in Fig. 3) constructs two IoT-specialized datasets and fine-tunes TDSLM and CGSLM, which will be used for task decomposition and code generation in the online stage, respectively. We first build a RAG agent to extract knowledge and programs from various IoT-related public sources (e.g., websites and articles) to construct high-quality datasets. Then, we augment the datasets by adopting our IoT-oriented augmentation method to enhance their quantity, quality, and diversity. Note that the RAG agent is only used for high-quality dataset construction during the offline stage. With the two augmented datasets, we fine-tune two SLMs via our PECT paradigm, where certain model parameters are collaboratively tuned through a multiple-path LoRA pipeline with two projection layers for task decomposition and code generation, respectively. Our PECT paradigm mitigates the domain misalignment between TDSLM and CGSLM with facilitated knowledge transfer and sharing.
+                            </li>
+                            <li>
+                                <strong>Online Stage.</strong> The online stage (the right part in Fig. 3) aims to synthesize IoT-specific programs based on the user requirement for an IoT application development. Specifically, GPIoT first leverages Task Decomposition SLM (TDSLM) to decompose the IoT application into multiple manageable sub-tasks with detailed descriptions (①∼②). Next, through CoT-based prompting techniques, the sub-task descriptions will be gradually transformed into well-structured specifications by Requirement Transformation SLM (RTSLM) (③∼④). Next, for each sub-task, Code Generation SLM (CGSLM) accordingly generates a code snippet with documentation (⑤∼⑥). Users can execute the code sequentially to realize the IoT application based on the instructions from the documentation (⑦).
+                            </li>
+                        </ul>
                         <div class="content has-text-centered">
                             <img src="./assets/system_overview.jpg" />
                         </div>
@@ -304,73 +296,115 @@
                     <h2 class="title is-3">Evaluation</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We evaluate the overall performance of <span class="dnerf">AutoIOT</span> on four representative AIoT applications.
+                            We construct a benchmark, IoTBench, to evaluate the overall performance of <span class="dnerf">GPIoT</span> on various IoT applications.
                         </p>
 
-                        <div class="content has-text-centered">
-                            <img src="./assets/overall_performance.jpg" />
-                        </div>
-                        <h6 class="subtitle has-text-centered">Figure 4: Figure 10: The overall performance of the four IoT applications. In (a), A. for AutoIOT, H. for Hamiltion, C. for Christov, E. for Engzee, P. for Pan-Tompkins, and S. for SWT. In (b), N. for NN, 1D for 1D-CNN, Bi. for BiLSTM, C. for Conv-LSTM, L. for LSTM-RNN, and 𝒏 for ResNet-𝒏. In (c) & (d), A.1, A.2, and A.3 for three different AutoIOT - generated programs; B. for the baseline in the multimodal HAR application.</h6>
-                    </div>
-                    
-                    <div class="content has-text-justified">
-                        <h3 class="title is-4">1. Heartbeat Detection <a href="./main_ECG.html" target="_blank">Demo</a></h3>
+                        <h3 class="title is-4">IoTBench</h3>
                         <p>
-                            Fig. 4(a) shows the heartbeat detection accuracy with MAE of AutoIOT (denoted as A.) and baselines. First of all, AutoIOT can synthesize a program automatically to achieve comparable performance with baselines in the heartbeat detection task. More surprisingly, the automatically synthesized program can even beat some of the baselines! For example, the synthesized program achieves higher detection accuracy than Pan-Tompkins (P.) and Engzee (E.). Moreover, it yields a lower error rate than Christov (C.) and Pan-Tompkins (P.). To investigate the reasons behind this, we examine and analyze the synthesized program.
+                            To evaluate LLMs' abilities in task decomposition and code generation for IoT applications, we create IoTBench, a benchmark of text-generation tasks in the IoT domain. Specifically, we choose 100 samples from TDD and CGD with manually created test cases, covering various IoT topics (e.g., signal processing, edge AI, etc.). All the selected data samples are first manually filtered to ensure correctness and relevance to the IoT domain. Then, we format the sub-tasks separated by a blank line in between. Note that although many SOTA benchmarks (e.g., HumanEval) can also evaluate LLMs' code generation abilities, they are not tailored to IoT tasks. Besides, the data in IoTBench is excluded from the tuning processes to test the generalizability of the tuned SLMs.
                         </p>
                     </div>
                     
                     <div class="content has-text-justified">
-                        <h3 class="title is-4">2. IMU-based & mmWave-based Human Activity Recognition (HAR) <a href="./main_IMU.html" target="_blank">Demo 1</a> <a href="./main_mmWave.html" target="_blank">Demo 2</a></h3>
+                        <h3 class="title is-4">1. Heartbeat Detection</h3>
                         <p>
-                            Fig. 4(b) shows the classification accuracy in two HAR tasks. We observe that AutoIOT outperforms NN and 1DCNN while underperforms BiLSTM, Conv-LSTM and LSTMRNN. The main reasons are twofold: (1) HAR tasks require both signal processing and machine learning algorithms, increasing the programming complexity to some extent; (2) Training neural networks requires fine-tuning of a vast array of hyper-parameters (e.g., network architecture configurations, epoch number, learning rate, optimizer, and loss function). This significantly amplifies the instability of the generated code and calls for careful fine-tuning to achieve the best performance in practice. As a result, AutoIOT surpasses those baselines adopting simple model architectures (NN and one-dimensional CNN) but falls short against baselines using sophisticated architectures (BiLSTM and Conv-LSTM) with highly optimized hyper-parameters. Although during code improvement, some synthesized programs define a set of configurations and adopt a searching strategy to obtain optimal hyper-parameters, the performance still remains slightly lower than some baselines. This is because the determination of the optimal configurations for machine learning models is typically a trial-and-error process, requiring substantial human effort. Fortunately, we observe that if the user provides a potential search space in advance, the LLM can design a search algorithm to try different hyper-parameter configurations and select the one with the best performance.
+                            As shown in Fig. 4, the code generated by GPIoT significantly outperforms all the baselines, with an average precision gain of 64.7% and an average RR increase of 16.9%. It's also worth noting that CodeLlama, WizardCoder, and CodeQwen achieve moderate RR (above 80%) but exhibit lower precision. With further analysis of the code, we find that they all adopt a simple peak detection function, <code>scipy.signal.find_peaks()</code>, which typically fails when handling abnormal ECG data from patients. As a result, the detection results contain numerous false positives with low precision.
                         </p>
+
+                        <div class="content has-text-centered">
+                            <img src="./assets/hd_result.jpg" width="45%"/>
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 4: The overall performance of heartbeat detection.</h6>
                     </div>
 
                     <div class="content has-text-justified">
-                        <h3 class="title is-4">3. Multimodal HAR <a href="./main_multimodal.html" target="_blank">Demo</a></h3>
+                        <h3 class="title is-4">2. Human Activity Recognition</h3>
                         <p>
-                            For multimodal HAR, the input instruction (A1) includes the basic information of the task, i.e., the task target, the dataset specifications, and the output format. Based on that, we create two additional variations: one with a GPUmemory-constrained requirement (A2) and another with a high accuracy requirement (A3). We then feed the instructions into AutoIOT and measure the accuracy and inference time of the synthesized programs, with results shown in Fig. 4(c). By analyzing the three synthesized different programs, we observe that: (1) All the synthesized programs adopt a similar workflow as the baseline system, i.e., they first construct three encoders to extract effective features from the three modalities, then concatenate these features and feed them into a classifier for activity recognition. This implies that benefiting from our CoT-based problem-solving paradigm, AutoIOT recognizes the workflow and architecture as effective and standard for handling multimodal data-related tasks, which is consistent with most of the existing methods. (2) AutoIOT can adjust the generated code to fulfill different requirements. The second program consumes less memory than others due to the resource constraint requirement, resulting in lower accuracy but reduced inference time (Fig. 4(d)). On the other hand, the third program adopts a more complex and larger model architecture, requiring more GPU memory and incurring a longer inference time. Such differences validate the capabilities of AutoIOT in accurately understanding and processing natural language-based user requirements. These observations further demonstrate the effectiveness of AutoIOT in ensuring the correctness of user requirement understanding and the generated code, benefiting from our automatic self-improvement component.
+                            In this evaluation, for all the generated HAR models, we set the training epochs to 10 and the batch size to 32 for a fair comparison. Besides, during our implementation, we find that after around 15 training epochs, all the models gradually converge. Therefore, we compare the model performance at the 10th epoch. As shown in Fig. 5, the program synthesized by GPIoT achieves a 17.2% higher accuracy with 47.8% less GPU memory and 38.3% shorter inference time on average.
                         </p>
+
+                        <div class="content has-text-centered">
+                            <img src="./assets/har_result.jpg" width="45%"/>
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 5: The overall performance of human activity recognition.</h6>
                     </div>
                     
                     <div class="content has-text-justified">
-                        <h3 class="title is-4">4. User Study</h3>
+                        <h3 class="title is-4">3. Multimodal HAR</h3>
                         <p>
-                            To investigate the utilities of AutoIOT, we conduct a user study (N=20) by inviting 5 expert and 15 non-expert users. The expert users are PhD students and professors with work or research experience in the IoT field and have developed many IoT applications. We select human activity recognition using RFID data (XRF55 dataset [ 73]) as the IoT application, where a 1D Conv-based ResNet18 is the baseline.
+                            We further instruct GPIoT to synthesize programs for the multimodal HAR application, aiming to evaluate its programming ability for more complex tasks. As shown in Fig. 6, compared with the baselines, the program synthesized by GPIoT achieves an average accuracy improvement of 13.44% while requiring moderate GPU memory and inference time. After reviewing the source code, we find that both GPIoT and the baselines train three encoders to first extract useful features from different modalities, followed by a classifier to recognize the corresponding activity. However, the program synthesized by GPIoT adopts some model optimization methods (e.g., quantization or pruning) and data augmentation methods tailored for IoT sensor data (e.g., time-frequency masking). As such, the synthesized program can train a memory-optimized model while maintaining high classification accuracy. These results indicate that, benefiting from our SLM tuning, the program synthesized by GPIoT can incorporate more IoT-specific data processing and model optimization algorithms, thereby achieving high performance even for multimodal HAR.
                         </p>
-                        <div class="content has-text-centered">
-                            <img src="./assets/objective.jpg" width="60%"/>
-                        </div>
-                        <h6 class="subtitle has-text-centered">Figure 5: User study (Objective Evaluation).</h6>
-                        <ul>
-                            <li>
-                                <strong>Objective Evaluation</strong> We first repeatedly measure the average task accuracy (classification accuracy) after executing the synthesized programs, with the results shown in Fig. 5(a).
-                            </li>
-                            <li>
-                                <strong>Subjective Evaluation</strong> We ask the users to execute the synthesized programs and rate AutoIOT based on four subjective metrics: 
-                                <ul>
-                                    <li>
-                                        <strong>System Utility (SU)</strong> measures the user's overall satisfaction with AutoIOT's performance.
-                                    </li>
-                                    <li>
-                                        <strong>Requirement Coverage (RC)</strong> evaluates how well the user requirements are fulfilled by AutoIOT.
-                                    </li>
-                                    <li>
-                                        <strong>Code & Documentation Readability (CDR)</strong> measures the clarity and structure of the code and documentation.
-                                    </li>
-                                    <li>
-                                        <strong>Generation Efficiency (GE)</strong> accesses how acceptable the waiting time is for synthesizing the final program.
-                                    </li>
-                                </ul>
-                                All the above metrics are rated by the users on a scale from 1 (not at all) to 6 (more than expected). The results are shown in shown in Fig. 6.
-                            </li>
-                        </ul>
 
                         <div class="content has-text-centered">
-                            <img src="./assets/subjective.jpg" width="20%"/>
+                            <img src="./assets/multimodal_har_result.jpg" width="45%"/>
                         </div>
-                        <h6 class="subtitle has-text-centered">Figure 6: User study (Subjective Evaluation).</h6>
+                        <h6 class="subtitle has-text-centered">Figure 6: The overall performance of multimodal HAR.</h6>
+                    </div>
+
+                    <div class="content has-text-justified">
+                        <h3 class="title is-4">TDSLM Evaluation</h3>
+                        <p>
+                            We input each problem statement from IoTBench into TDSLM and the baselines to generate 20 different decomposed tasks and calculate the average BLEU score, FCR, and URC. From Fig. 17, we observe:
+                            <ul>
+                                <li>
+                                    The decomposed tasks generated by TDSLM achieve a 48% higher BLEU score than the baselines on average, indicating a stronger decomposition ability for IoT tasks. 
+                                </li>
+                                <li>
+                                    TDSLM achieves 99% FCR, indicating remarkable stability to generate intermediate output (decomposed tasks) based on pre-defined formats.
+                                </li>
+                                <li>
+                                    TDSLM also achieves a 28% higher STC on average, showcasing strong abilities in understanding IoT knowledge and generating comprehensive decomposed tasks for IoT applications. 
+                                </li>
+                            </ul>
+                            Such superior IoT task decomposition and data formatting performance of TDSLM originate from the tuning process on TDD with our IoT-oriented text data augmentation method.
+                        </p>
+
+                        <div class="content has-text-centered">
+                            <img src="./assets/tdslm_result.jpg" width="45%"/>
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 7: Breakdown evaluation on TDSLM.</h6>
+                    </div>
+
+                    <div class="content has-text-justified">
+                        <h3 class="title is-4">CGSLM Evaluation</h3>
+                        <p>
+                            We input each task specification from IoTBench into CGSLM and the baselines to generate 20 different code & documentation. We then report the average code embedding similarity, pass@1, pass@5, URC, and the number of various issues detected by SonarQube. by executing and reviewing the code. For comparison, we also report the pass@1 achieved by CodeLlama on a general-purpose programming benchmark, HumanEval, as shown in Fig. 8.
+                        </p>
+
+                        <div class="content has-text-centered">
+                            <img src="./assets/cgslm_result.jpg" width="45%"/>
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 8: Breakdown evaluation on CGSLM.</h6>
+                    </div>
+                    
+                    
+                    <div class="content has-text-justified">
+                        <h3 class="title is-4">User Study</h3>
+                        <p>
+                            We conduct a user study to evaluate the functionality, generalizability, and overall satisfaction of GPIoT for IoT application development. Specifically, with GPIoT deployed on an edge server, we invite 5 experts and 15 non-experts in IoT and ask them to freely express their requirements for any IoT application development that requires signal processing or AI technologies. By sequentially executing the generated code based on the instructions in the documentation, we ask the users to rate GPIoT based on five metrics:
+                            <ul>
+                                <li>
+                                    Overall Code Performance (OCP) evaluates the overall performance of the generated code on corresponding test data considering task accuracy, runtime efficiency, and resource consumption.
+                                </li>
+                                <li>
+                                    Code & Documentation Readability (CDR) measures the clarity and structure of the code and documentation.
+                                </li>
+                                <li>
+                                    Generation Efficiency (GE) accesses how efficiently GPIoT operates in terms of speed and resource usage to produce the final results.
+                                </li>
+                                <li>
+                                    Code Modularity (CM) judges whether the code is properly modularized for easy reuse and extension.
+                                </li>
+                                <li>
+                                    User Satisfaction (US) captures users' feedback regarding their overall personal experience.
+                                </li>
+                            </ul>
+                            All the above metrics are rated by the users on a scale from 1 (not at all) to 5 (completely). Github Copilot, DeepSeek-Coder (cloud), CodeLlama (local), and MapCoder (agent) serve as representative baselines for comparison. The results are shown in Fig. 9.
+                        </p>
+                        <div class="content has-text-centered">
+                            <img src="./assets/user_study.jpg" width="45%"/>
+                        </div>
+                        <h6 class="subtitle has-text-centered">Figure 9: User study (Objective Evaluation).</h6>
                     </div>
                 </div>
             </div>
@@ -385,7 +419,7 @@
                     <h2 class="title is-3">Conclusion</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We propose AutoIOT, an LLM-driven automated natural language programming system for AIoT applications. Our system features three novel technical modules: <i>background knowledge retrieval</i>, <i>automated program synthesis</i>, and <i>code improvement</i>, transforming natural language descriptions into executable programs. Our experiments demonstrate the competitive performance of AutoIOT in synthesizing programs for a variety of AIoT applications, with comparable performance in challenging AIoT tasks and sometimes outperforming some representative baselines. This showcases the strong potential of exploiting the embedded common knowledge of LLMs to evolve AIoT application development.
+                            We present GPIoT, a tailored local code generation system that synthesizes programs with documentation based on user requirements for IoT application development. Armed with two IoT-specialized text-generation datasets, the IoT-oriented augmentation method, and our PECT paradigm, GPIoT can generate more IoT-related code in a privacy-preserving way, achieving enhanced task accuracy and user satisfaction for IoT application development. As IoT technologies are emerging rapidly, it is also worthwhile to explore the construction of a dynamic IoT knowledge database and continuous fine-tuning of local SLMs in the future.
                         </p>
                     </div>
                 </div>
@@ -396,20 +430,20 @@
     <section class="section">
         <div class="container is-max-desktop">
             <p>
-                <svg class="svg-inline--fa fa-hand-point-right fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-point-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>                For more details, please refer to our <a href="https://lemingshen.github.io/assets/publication/conference/AutoIOT/paper.pdf" target="_blank"><svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->Paper</a>.
+                <svg class="svg-inline--fa fa-hand-point-right fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-point-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" width="80px" height="80px"><path fill="currentColor" d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>                For more details, please refer to our <a href="https://lemingshen.github.io/assets/publication/conference/GPIoT/paper.pdf" target="_blank"><svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="" width="80px" height="80px"><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->Paper</a>.
             </p>
             <p>
-                <svg class="svg-inline--fa fa-hand-point-right fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-point-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>                The code for implementing <span class="dnerf">AutoIOT</span> is available at <a href="https://github.com/lemingshen/AutoIOT" target="_blank"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->here</a>.
+                <svg class="svg-inline--fa fa-hand-point-right fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-point-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" width="80px" height="80px"><path fill="currentColor" d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>                The code for implementing <span class="dnerf">GPIoT</span> is available at <a href="https://github.com/lemingshen/GPIoT" target="_blank"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="" width="80px" height="80px"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->here</a>.
             </p>
         </div>
         <section <section class="section" id="BibTeX">
             <div class="container is-max-desktop content">
                 <h2 class="title">BibTeX</h2>
-                <pre><code>@inproceedings{shen2025autoiot,
-  title={AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications},
-  author={Shen, Leming and Yang, Qiang and Zheng, Yuanqing and Li, Mo},
-  booktitle={Proceedings of the 31st Annual International Conference on Mobile Computing and Networking},
-  pages={1--15},
+                <pre><code>@inproceedings{shen2025gpiot,
+  title={GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development},
+  author={Shen, Leming and Yang, Qiang and Huang, Xinyu and Ma, Zijing and Zheng, Yuanqing},
+  booktitle={Proceedings of the 22nd ACM Conference on Embedded Networked Sensor Systems},
+  pages={1--14},
   year={2025}
 }</code></pre>
             </div>
