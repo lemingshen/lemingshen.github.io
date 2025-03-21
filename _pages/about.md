@@ -22,8 +22,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Education
 
+-   Purchasing PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026 expected)
 -   B.S. degree from _Zhejiang University_ (2022)
--   High School Degree from _Hang Zhou Xuejun High School_ (2018)
 
 <br>
 
@@ -62,10 +62,10 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 -   **<font color=blue>[SenSys'22]</font> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars** <br> Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Jinsong Han<br> [[PDF](/assets/publication/others/mmRipple/paper.pdf)] [[Video](https://www.youtube.com/watch?v=BLBkSKZUIHc)]
 
-## Patents
+<!-- ## Patents
 
 -   **一种基于下颌骨生物特征的可靠用户认证方法及系统** <br> Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren
--   **一种基于声波的无人机回收的方法及装置** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Feng Lin, Jinsong Han, Kui Ren
+-   **一种基于声波的无人机回收的方法及装置** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Feng Lin, Jinsong Han, Kui Ren -->
 
 ## Professional Services
 
@@ -78,20 +78,17 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
--   **ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.**
--   **ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.**
+-   <font color=blue>**ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.**</font>
+-   <font color=blue>**ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.**</font>
 -   ACM MobiSys Student Travel Grant, 2024.
 -   Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
--   Second Prize, Network Technology Challenges, China College Computing Contest, 2020.
--   First Prize, east China division, Network Technology Challenges, China College Computing Contest, 2020.
--   Successful Participant, National College Students Network Security Knowledge Competition, 2020.
 -   Microsoft Student Partners, presented by Microsoft, 2019, 2020, and 2021.
 -   Microsoft Learn Student Ambassadors, presented by Microsoft, 2022.
 
 ## Teaching
 
 -   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall, 2023 Fall.
--   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring, 2024 Spring.
+-   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring, 2024 Spring, 2025 Spring.
 -   Teaching Assistant, COMP5434 Big Data Computing, 2024 Fall.
 
 ## Contact

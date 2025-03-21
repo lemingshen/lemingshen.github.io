@@ -17,6 +17,16 @@
   <lastmod>2023-09-07T02:48:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://lemingshen.github.io/projects/autoiot/index.html</loc>
+  <lastmod>2025-03-31T02:48:15+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://lemingshen.github.io/projects/gpiot/index.html</loc>
+  <lastmod>2025-03-22T02:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
