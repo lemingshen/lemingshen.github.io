@@ -69,6 +69,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
+- Program committee of ACM MobiCom 2025 Artifact Evaluation.
+- Program committee of ACM MobiSys 2025 Artifact Evaluation.
 - Program committee of ACM SenSys 2024 Artifact Evaluation.
 - Program committee of ACM MobiSys 2024 Artifact Evaluation.
 - Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
@@ -78,8 +80,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
--   <font color=blue>**ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.**</font>
--   <font color=blue>**ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.**</font>
+-   **<font color=blue>ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
+-   **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 -   ACM MobiSys Student Travel Grant, 2024.
 -   Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
 -   Microsoft Student Partners, presented by Microsoft, 2019, 2020, and 2021.
