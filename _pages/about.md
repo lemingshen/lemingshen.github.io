@@ -56,6 +56,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Others
 
+- **<font color=blue>[MobiSys'25]</font> Poster: Towards Federated Embodied AI with FEAI** <br> **Leming Shen**, Yuanqing Zheng <br> [[PDF](/assets/publication/others/FEAI/poster.pdf)]
+
 - **<font color=blue>[MobiCom'24]</font> Poster: IoTCoder: A Copilot for IoT Application Development** <br> **Leming Shen**, Yuanqing Zheng <br> [[PDF](/assets/publication/others/IoTCoder/paper.pdf)]
 
 -   **<font color=blue>[ICDCS'23]</font> PhD Symposium: FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing** <br> **Leming Shen**, Yuanqing Zheng <br> [[PDF](/assets/publication/others/FedDM/paper.pdf)]
@@ -69,10 +71,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
-- Program committee of ACM MobiCom 2025 Artifact Evaluation.
-- Program committee of ACM MobiSys 2025 Artifact Evaluation.
-- Program committee of ACM SenSys 2024 Artifact Evaluation.
-- Program committee of ACM MobiSys 2024 Artifact Evaluation.
+- Program committee of ACM MobiCom Artifact Evaluation, 2025.
+- Program committee of ACM MobiSys Artifact Evaluation, 2024, 2025.
+- Program committee of ACM SenSys Artifact Evaluation, 2024.
+- Invited reviewer of ACM Transactions on Internet of Things (TIOT) 2025.
+- Invited reviewer of Computer Networks, 2025.
 - Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
 - Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
 - Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
