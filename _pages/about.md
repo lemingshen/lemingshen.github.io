@@ -33,7 +33,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](#)] &nbsp; (Acceptance ratio: 46/245=18.8%) 
+- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] &nbsp; (Acceptance ratio: 46/245=18.8%) 
 
 - **<font color=blue>[MobiCom'25]</font> AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications** <br> **Leming Shen**, Qiang Yang, Yuanqing Zheng, Mo Li <br> [[PDF](/assets/publication/conference/AutoIOT/paper.pdf)] [[Code](https://github.com/lemingshen/AutoIOT)] [[Web](https://lemingshen.github.io/projects/autoiot)] [[Slides](#)] [[Demo Video](https://youtu.be/E0INJT9xEWg)] &nbsp; (Acceptance ratio: 41/240=17.1%) 
 
