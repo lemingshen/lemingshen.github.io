@@ -99,7 +99,6 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Contact
 
 -   ✉️ <leming.shen@connect.polyu.hk> & <ZJU.SLM@gmail.com>
--   📞 (+86) 15381145750, (+852) 62371304
 -   🏠 QT404, Department of Computing, Chow Yei Ching Building, The Hong Kong Polytechnic University, Hong Kong SAR, China.
 - <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.9996711329782!2d114.18011306754038!3d22.304651755932625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400e7cc7f4a45%3A0x521024fd522b46ba!2sThe%20Hong%20Kong%20Polytechnic%20University%20Chow%20Yei%20Ching%20Building!5e0!3m2!1sen!2shk!4v1699627484481!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
