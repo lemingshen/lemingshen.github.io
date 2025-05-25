@@ -71,6 +71,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
+- Program committee of ACM CCS Artifact Evaluation, 2025.
 - Program committee of ACM MobiCom Artifact Evaluation, 2025.
 - Program committee of ACM MobiSys Artifact Evaluation, 2024, 2025.
 - Program committee of ACM SenSys Artifact Evaluation, 2024.
@@ -79,7 +80,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
 - Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
 - Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
-- Invited reviewer of ACM IMWUT/UbiComp 2023. 2024.
+- Invited reviewer of ACM IMWUT/UbiComp 2023, 2024, 2025.
 
 ## Honors & Awards
 
