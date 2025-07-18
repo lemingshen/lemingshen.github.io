@@ -49,6 +49,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> ***Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han* <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
+- **<font color=blue>[arXiv]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> *Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng* <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
 - **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> *Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han* <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
@@ -74,17 +75,21 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
-- Program committee of ACM MobiCom Artifact Evaluation, 2025.
-- Program committee of ACM MobiSys Artifact Evaluation, 2024, 2025.
-- Program committee of ACM SenSys Artifact Evaluation, 2024.
-- Program committee of NDSS Artifact Evaluation, 2026
-- Program committee of ACM CCS Artifact Evaluation, 2025.
-- Invited reviewer of ACM Transactions on Internet of Things (TIOT) 2025.
-- Invited reviewer of Computer Networks, 2025.
-- Invited reviewer of IEEE Transactions on Mobile Computing (TMC) 2024.
-- Invited reviewer of ACM Transactions on Senosr Networks (ToSN) 2024.
-- Invited reviewer of IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
-- Invited reviewer of ACM IMWUT/UbiComp 2023, 2024, 2025.
+### TPC Member
+- ACM MobiCom Demos, 2025.
+- ACM MobiCom Artifact Evaluation, 2025.
+- ACM MobiSys Artifact Evaluation, 2024, 2025.
+- ACM SenSys Artifact Evaluation, 2024.
+- NDSS Artifact Evaluation, 2026
+- ACM CCS Artifact Evaluation, 2025.
+
+### Invited Reviewer
+- ACM Transactions on Internet of Things (TIOT) 2025.
+- Computer Networks, 2025.
+- IEEE Transactions on Mobile Computing (TMC) 2024.
+- ACM Transactions on Senosr Networks (ToSN) 2024.
+- IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
+- ACM IMWUT/UbiComp 2023, 2024, 2025.
 
 ## Honors & Awards
 
