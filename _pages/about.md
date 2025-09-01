@@ -10,12 +10,12 @@ redirect_from:
 
 # Biography
 ---
-Leming Shen（沈乐明）is currently a third-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Large Language Models, Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
+Leming Shen（沈乐明）is currently a fourth-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Large Language Models, Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Research Interests
--   Large Language Models
+-   Large Language Models & Embodied AI
 -   Mobile/Edge Computing
 -   AIoT Applications
 -   Wireless Sensing
@@ -58,7 +58,12 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 -   **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> *Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren* <br>
     [[PDF](/assets/publication/journal/mandipass/paper.pdf)]
 
-### Others
+### Short Papers
+
+
+- **<font color=blue>[MobiCom'25]</font> Poster: Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> ***Xinyu Huang*, *Leming Shen**, *Zijing Ma*, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/homellama_poster.pdf)]
+
+- **<font color=blue>[CCS'25]</font> Poster: LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework** <br> ***Ziming Ma*, *Leming Shen**, *Xinyu Huang*, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/llmware_poster.pdf)]
 
 - **<font color=blue>[MobiSys'25]</font> Poster: Towards Federated Embodied AI with FEAI** <br> ***Leming Shen**, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/FEAI/poster.pdf)]
 
@@ -67,11 +72,6 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 -   **<font color=blue>[ICDCS'23]</font> FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing** <br> ***Leming Shen**, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/FedDM/paper.pdf)]
 
 -   **<font color=blue>[SenSys'22]</font> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars** <br> *Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Jinsong Han*<br> [[PDF](/assets/publication/others/mmRipple/paper.pdf)] [[Video](https://www.youtube.com/watch?v=BLBkSKZUIHc)]
-
-<!-- ## Patents
-
--   **一种基于下颌骨生物特征的可靠用户认证方法及系统** <br> Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren
--   **一种基于声波的无人机回收的方法及装置** <br> Ming Gao, Lingfeng Zhang, **Leming Shen**, Feng Lin, Jinsong Han, Kui Ren -->
 
 ## Professional Services
 
@@ -90,6 +90,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM Transactions on Senosr Networks (ToSN) 2024.
 - IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
+- Expert Systems with Applications, 2025.
 
 ## Honors & Awards
 
@@ -104,7 +105,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 -   Teaching Assistant, COMP5311 Internet Infrastructure And Protocols, 2022 Fall, 2023 Fall.
 -   Teaching Assistant, COMP1011 Programming Fundamentals, 2023 Spring, 2024 Spring, 2025 Spring.
--   Teaching Assistant, COMP5434 Big Data Computing, 2024 Fall.
+-   Teaching Assistant, COMP5434 Big Data Computing, 2024 Fall, 2025 Fall.
 
 ## Contact
 
