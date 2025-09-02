@@ -60,18 +60,42 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Short Papers
 
+<details>
+  <summary style="cursor: pointer">Full List</summary>
+  <ul>
+    <li>
+      <b><span style="color: blue">[MobiCom'25]</span> Poster: Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models</b><br>
+      <i>Xinyu Huang, <b>Leming Shen</b>, Zijing Ma, Yuanqing Zheng</i><br>
+      [<a href="/assets/publication/others/homellama_poster.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[CCS'25]</span> Poster: LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework</b><br>
+      <i>Zijing Ma, <b>Leming Shen</b>, Xinyu Huang, Yuanqing Zheng</i><br>
+      [<a href="/assets/publication/others/llmware_poster.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[MobiSys'25]</span> Poster: Towards Federated Embodied AI with FEAI</b><br>
+      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      [<a href="/assets/publication/others/FEAI/poster.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[MobiCom'24]</span> IoTCoder: A Copilot for IoT Application Development</b><br>
+      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      [<a href="/assets/publication/others/IoTCoder/paper.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[ICDCS'23]</span> FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing</b><br>
+      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      [<a href="/assets/publication/others/FedDM/paper.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[SenSys'22]</span> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars</b><br>
+      <i>Kaiyan Cui, Qiang Yang, <b>Leming Shen</b>, Yuanqing Zheng, Jinsong Han</i><br>
+      [<a href="/assets/publication/others/mmRipple/paper.pdf" target="_blank">PDF</a>] [<a href="[/assets/publication/others/mmRipple/paper.pdf](https://www.youtube.com/watch?v=BLBkSKZUIHc)" target="_blank">Video</a>]
+    </li>
+  </ul>
+</details>
 
-- **<font color=blue>[MobiCom'25]</font> Poster: Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> ***Xinyu Huang*, *Leming Shen**, *Zijing Ma*, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/homellama_poster.pdf)]
-
-- **<font color=blue>[CCS'25]</font> Poster: LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework** <br> ***Ziming Ma*, *Leming Shen**, *Xinyu Huang*, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/llmware_poster.pdf)]
-
-- **<font color=blue>[MobiSys'25]</font> Poster: Towards Federated Embodied AI with FEAI** <br> ***Leming Shen**, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/FEAI/poster.pdf)]
-
-- **<font color=blue>[MobiCom'24]</font> IoTCoder: A Copilot for IoT Application Development** <br> ***Leming Shen**, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/IoTCoder/paper.pdf)]
-
--   **<font color=blue>[ICDCS'23]</font> FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing** <br> ***Leming Shen**, Yuanqing Zheng* <br> [[PDF](/assets/publication/others/FedDM/paper.pdf)]
-
--   **<font color=blue>[SenSys'22]</font> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars** <br> *Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Jinsong Han*<br> [[PDF](/assets/publication/others/mmRipple/paper.pdf)] [[Video](https://www.youtube.com/watch?v=BLBkSKZUIHc)]
 
 ## Professional Services
 
