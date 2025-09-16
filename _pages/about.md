@@ -106,6 +106,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM SenSys Artifact Evaluation, 2024.
 - NDSS Artifact Evaluation, 2026
 - ACM CCS Artifact Evaluation, 2025.
+- IEEE S&P Artifact Evaluation, 2026.
 
 ### Invited Reviewer
 - ACM Transactions on Internet of Things (TIOT) 2025.
