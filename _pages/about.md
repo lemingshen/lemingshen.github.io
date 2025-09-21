@@ -17,7 +17,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ### Research Interests
 -   Large Language Models & Embodied AI
 -   Mobile/Edge Computing
--   AIoT Applications
+-   AIoT Applications & Security
 -   Wireless Sensing
 
 ### Education
