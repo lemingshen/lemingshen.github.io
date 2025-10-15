@@ -119,6 +119,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Honors & Awards
 
+-   **<font color=blue>ACM CCS Distinguished Artifact Evaluation Reviewer Award, 2025.</font>**
 -   **<font color=blue>ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 -   **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 -   ACM MobiSys Student Travel Grant, 2024.
