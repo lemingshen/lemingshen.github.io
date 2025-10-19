@@ -116,6 +116,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
 - Expert Systems with Applications, 2025.
+- Sensing and Bio-Sensing Research, 2025.
 
 ## Honors & Awards
 
