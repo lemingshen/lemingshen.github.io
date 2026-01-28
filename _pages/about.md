@@ -49,7 +49,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> ***Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han* <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
-- **<font color=blue>[arXiv]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> *Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng* <br> [[PDF](https://arxiv.org/abs/2507.08878)]
+- **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> *Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng* <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
 - **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> *Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han* <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
@@ -100,6 +100,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Professional Services
 
 ### TPC Member
+- ACM MobiSys Workshop -- [AutoSys 2026](https://autosys26.github.io/). <b><span style="color: blue">Please consider submitting your paper!</span></b>
 - ACM MobiCom Demos, 2025.
 - ACM MobiCom Artifact Evaluation, 2025.
 - ACM MobiSys Artifact Evaluation, 2024, 2025.
@@ -107,6 +108,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - NDSS Artifact Evaluation, 2026
 - ACM CCS Artifact Evaluation, 2025.
 - IEEE S&P Artifact Evaluation, 2026.
+- USEIX Security Artifact Evaluation, 2026.
 
 ### Invited Reviewer
 - ACM Transactions on Internet of Things (TIOT) 2025.
@@ -115,8 +117,9 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM Transactions on Senosr Networks (ToSN) 2024.
 - IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
-- Expert Systems with Applications, 2025.
+- Expert Systems with Applications (ESWA), 2025, 2026.
 - Sensing and Bio-Sensing Research, 2025.
+- Computers and Electronics in Agriculture, 2025, 2026.
 
 ## Honors & Awards
 
