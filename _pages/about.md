@@ -101,6 +101,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 - ACM MobiSys Workshop -- [AutoSys 2026](https://autosys26.github.io/). <b><span style="color: blue">Please consider submitting your paper!</span></b>
+- ACM HeadSys Workshop -- [HeadSys 2026](https://www.eventcreate.com/e/headsys26). <b><span style="color: blue">Please consider submitting your paper!</span></b>
 - ACM MobiCom Demos, 2025.
 - ACM MobiCom Artifact Evaluation, 2025.
 - ACM MobiSys Artifact Evaluation, 2024, 2025.
