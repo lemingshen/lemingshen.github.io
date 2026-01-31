@@ -120,7 +120,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
 - Expert Systems with Applications (ESWA), 2025, 2026.
 - Sensing and Bio-Sensing Research, 2025.
-- Computers and Electronics in Agriculture, 2025, 2026.
+- Computers and Electrical Engineering, 2025.
+- Computers and Electronics in Agriculture, 2026.
 
 ## Honors & Awards
 
