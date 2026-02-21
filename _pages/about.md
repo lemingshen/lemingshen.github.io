@@ -12,7 +12,7 @@ redirect_from:
 
 ---
 
-Leming Shen（沈乐明）is currently a fourth-year Ph. D. student of [Department of Computing](https://www.polyu.edu.hk/comp/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He received B.S. degree in Software Engineering from [College of Computer Science and Technology](http://www.cs.zju.edu.cn/), [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Large Language Models, Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
+Leming Shen（沈乐明）is currently a fourth-year PhD student of Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He is/was also a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Embodied AI, Large Language Models, Edge/Mobile Computing, AIoT Applications, and Wireless Sensing.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
@@ -25,6 +25,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Education
 
+- Visiting PhD in _University College London_ (2026.02 - 2026.08)
 - Purchasing PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026 expected)
 - B.S. degree from _Zhejiang University_ (2022)
 
