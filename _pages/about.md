@@ -25,7 +25,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Education
 
-- Visiting PhD in _University College London_ (2026.02 - 2026.08)
+- Visiting PhD in _University College London_ (2026.02 - 2026.07)
 - Purchasing PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026 expected)
 - B.S. degree from _Zhejiang University_ (2022)
 
