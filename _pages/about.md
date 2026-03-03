@@ -37,14 +37,16 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **\*Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng\* <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%) <br>
+- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, **Leming Shen**, Zijing Ma, Yuanqing Zheng <br> [[PDF](https://arxiv.org/abs/2603.01414)] [[Code](https://github.com/lemingshen/GPIoT)] &nbsp; (Acceptance ratio: 46/245=18.8%)
+
+- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%)
+
+- **<font color=blue>[MobiCom'25]</font> AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications** <br> **Leming Shen**, Qiang Yang, Yuanqing Zheng, Mo Li <br> [[PDF](/assets/publication/conference/AutoIOT/paper.pdf)] [[Code](https://github.com/lemingshen/AutoIOT)] [[Web](https://lemingshen.github.io/projects/autoiot)] [[Slides](/assets/publication/conference/AutoIOT/AutoIOT_presentation.pdf)] [[Demo Video](https://youtu.be/E0INJT9xEWg)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} ![](/images/replicated.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 41/240=17.1%)<br>
   AutoIOT is now embedded into GitHub Copilot, try our VS Code Extension with one click [here](https://marketplace.visualstudio.com/items?itemName=LemingShen.autoiot)!
 
-- **<font color=blue>[MobiCom'25]</font> AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications** <br> **\*Leming Shen**, Qiang Yang, Yuanqing Zheng, Mo Li\* <br> [[PDF](/assets/publication/conference/AutoIOT/paper.pdf)] [[Code](https://github.com/lemingshen/AutoIOT)] [[Web](https://lemingshen.github.io/projects/autoiot)] [[Slides](/assets/publication/conference/AutoIOT/AutoIOT_presentation.pdf)] [[Demo Video](https://youtu.be/E0INJT9xEWg)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} ![](/images/replicated.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 41/240=17.1%)
+- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [[Slides](/assets/publication/conference/fedconv/slides.pdf)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%)
 
-- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **\*Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han\* <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [[Slides](/assets/publication/conference/fedconv/slides.pdf)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%)
-
-- **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **\*Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han\* <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
+- **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
 
 - **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> _Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_ <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
 
@@ -52,7 +54,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Journal
 
-- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> **\*Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han\* <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
+- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
 - **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
