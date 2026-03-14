@@ -37,7 +37,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, **Leming Shen**, Zijing Ma, Yuanqing Zheng <br> [[PDF](https://arxiv.org/abs/2603.01414)] &nbsp; (Acceptance ratio: 52/263=19.8%)
+- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, **Leming Shen**, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] &nbsp; (Acceptance ratio: 52/263=19.8%)
 
 - **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%)
 
