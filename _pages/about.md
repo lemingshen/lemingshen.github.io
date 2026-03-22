@@ -129,7 +129,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - ACM Transactions on Internet of Things (TIOT) 2025.
 - Computer Networks, 2025, 2026.
-- IEEE Transactions on Mobile Computing (TMC) 2024.
+- IEEE Transactions on Mobile Computing (TMC) 2024, 2026.
 - ACM Transactions on Senosr Networks (ToSN) 2024.
 - IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
