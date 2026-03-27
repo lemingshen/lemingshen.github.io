@@ -54,7 +54,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Journal
 
-- **<font color=blue>[TMC]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, **Leming Shen**, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
+- **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, **Leming Shen**, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
 - **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
