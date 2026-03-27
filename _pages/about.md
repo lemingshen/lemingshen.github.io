@@ -54,9 +54,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Journal
 
-- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
+- **<font color=blue>[TMC]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, **Leming Shen**, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
 - **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
+
+- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
 - **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> _Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han_ <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
@@ -71,7 +73,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <summary style="cursor: pointer">Full List</summary>
   <ul>
     <li>
-      <b><span style="color: blue">[INFOCOM'26 EIN Workshop]</span>Federated Self-Evolving Embodied AI Agents</b><br>
+      <b><span style="color: blue">[INFOCOM'26 EIN Workshop]</span> Federated Self-Evolving Embodied AI Agents</b><br>
       <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/FSEAI.pdf" target="_blank">PDF</a>]
     </li>
