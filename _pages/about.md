@@ -146,10 +146,15 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - **<font color=blue>ACM CCS Distinguished Artifact Evaluation Reviewer Award, 2025.</font>**
 - **<font color=blue>ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 - **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
+- Best Oral Presentation, PolyU COMP - HKUST (GZ) INFH Research Student Conference, 2025.
 - ACM MobiSys Student Travel Grant, 2024.
 - Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
 - Microsoft Student Partners, presented by Microsoft, 2019, 2020, and 2021.
 - Microsoft Learn Student Ambassadors, presented by Microsoft, 2022.
+
+## Talks
+
+- **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1st, 2026. [Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)
 
 ## Teaching
 
