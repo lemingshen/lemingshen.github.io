@@ -4,8 +4,8 @@ title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
-  - /about/
-  - /about.html
+    - /about/
+    - /about.html
 ---
 
 # Biography
@@ -140,6 +140,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Computers and Electrical Engineering, 2025, 2026.
 - Computers and Electronics in Agriculture, 2026.
 - Future Generation Computer Systems, 2026.
+- SoftwareX, 2026.
 
 ## Honors & Awards
 
