@@ -155,7 +155,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Talks
 
-- **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1st, 2026. [Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)
+- **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1st, 2026. <br>[[Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)] [[Slides](/assets/talks/flower_monthly.pdf)]
 
 ## Teaching
 
