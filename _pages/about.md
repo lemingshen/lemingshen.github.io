@@ -73,6 +73,16 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <summary style="cursor: pointer">Full List</summary>
   <ul>
     <li>
+      <b><span style="color: blue">[MobiSys'26 Rising Starts Forum]</span> Towards Automated, Resilient, and Robust AIoT</b><br>
+      <i><b>Leming Shen</b></i><br>
+      [<a href="/assets/publication/others/rising_star.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
+      <b><span style="color: blue">[Getmobile'26]</span> One Workflow Doesn't Fit All: Adaptive Workflows for Edge AI Development</b><br>
+      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      [<a href="https://dl.acm.org/doi/abs/10.1145/3810919.3810921" target="_blank">PDF</a>]
+    </li>
+    <li>
       <b><span style="color: blue">[INFOCOM'26 EIN Workshop]</span> Federated Self-Evolving Embodied AI Agents</b><br>
       <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/FSEAI.pdf" target="_blank">PDF</a>]
@@ -114,10 +124,10 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
-- [ACM MobiSys Demos, 2026](https://mobisys26demos.hotcrp.com/u/0/) <b><span style="color: blue">Please consider submitting your paper!</span></b>
-
-- ACM MobiSys Workshop -- [AutoSys 2026](https://autosys26.github.io/). <b><span style="color: blue">Please consider submitting your paper!</span></b>
-- ACM MobiSys Workshop -- [HeadSys 2026](https://www.eventcreate.com/e/headsys26). <b><span style="color: blue">Please consider submitting your paper!</span></b>
+- IEEE MASS, 2026.
+- ACM MobiSys Demos, 2026
+- ACM MobiSys Workshop -- AutoSys 2026
+- ACM MobiSys Workshop -- HeadSys 2026
 - ACM MobiCom Demos, 2025.
 - ACM MobiCom Artifact Evaluation, 2025.
 - ACM MobiSys Artifact Evaluation, 2024, 2025, 2026.
@@ -141,9 +151,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Computers and Electronics in Agriculture, 2026.
 - Future Generation Computer Systems, 2026.
 - SoftwareX, 2026.
+- Neural Networks (NEUNET), 2026
 
 ## Honors & Awards
 
+- **<font color=blue>ACM MobiSys Rising Start, 2026.</font>**
 - **<font color=blue>ACM CCS Distinguished Artifact Evaluation Reviewer Award, 2025.</font>**
 - **<font color=blue>ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 - **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
@@ -155,6 +167,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Talks
 
+- **Towards Autonomous Development of Mobile Sensing Applications with Agentic LLMs** @ The University of Cambridge, April 28th, 2026.
 - **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1st, 2026. <br>[[Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)] [[Slides](/assets/talks/flower_monthly.pdf)]
 
 ## Teaching
@@ -165,7 +178,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Contact
 
-- ✉️ <leming.shen@connect.polyu.hk> & <ZJU.SLM@gmail.com>
+- ✉️ <leming.shen@connect.polyu.hk>, <leming.shen@ucl.ac.uk>, <zju.slm@gmail.com>
 - 🏠 QT404, Department of Computing, Chow Yei Ching Building, The Hong Kong Polytechnic University, Hong Kong SAR, China.
 - <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.9996711329782!2d114.18011306754038!3d22.304651755932625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400e7cc7f4a45%3A0x521024fd522b46ba!2sThe%20Hong%20Kong%20Polytechnic%20University%20Chow%20Yei%20Ching%20Building!5e0!3m2!1sen!2shk!4v1699627484481!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
