@@ -151,7 +151,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Computers and Electronics in Agriculture, 2026.
 - Future Generation Computer Systems, 2026.
 - SoftwareX, 2026.
-- Neural Networks (NEUNET), 2026
+- Neural Networks (NEUNET), 2026.
+- Engineering Applications of Artificial Intelligence, 2026.
 
 ## Honors & Awards
 
