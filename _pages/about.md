@@ -133,7 +133,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM MobiSys Artifact Evaluation, 2024, 2025, 2026.
 - ACM SenSys Artifact Evaluation, 2024.
 - NDSS Artifact Evaluation, 2026
-- ACM CCS Artifact Evaluation, 2025.
+- ACM CCS Artifact Evaluation, 2025, 2026.
 - IEEE S&P Artifact Evaluation, 2026.
 - USEIX Security Artifact Evaluation, 2026.
 
