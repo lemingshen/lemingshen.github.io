@@ -67,7 +67,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren_ <br>
   [[PDF](/assets/publication/journal/mandipass/paper.pdf)]
 
-### Short Papers
+### Poster/Demo/Workshop
 
 <details>
   <summary style="cursor: pointer">Full List</summary>
