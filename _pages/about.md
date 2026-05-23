@@ -73,6 +73,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <summary style="cursor: pointer">Full List</summary>
   <ul>
     <li>
+      <b><span style="color: blue">[MobiUK'26]</span> Towards Automated Mobile Model Deployment</b><br>
+      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      [<a href="/assets/publication/others/mobiuk.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
       <b><span style="color: blue">[MobiSys'26 Rising Starts Forum]</span> Towards Automated, Resilient, and Robust AIoT</b><br>
       <i><b>Leming Shen</b></i><br>
       [<a href="/assets/publication/others/rising_star.pdf" target="_blank">PDF</a>]
@@ -153,6 +158,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - SoftwareX, 2026.
 - Neural Networks (NEUNET), 2026.
 - Engineering Applications of Artificial Intelligence, 2026.
+- Information & Communications Technology Express (ICT Express), 2026.
 
 ## Honors & Awards
 
