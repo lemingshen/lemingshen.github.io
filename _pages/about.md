@@ -134,7 +134,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM MobiSys Workshop -- AutoSys 2026
 - ACM MobiSys Workshop -- HeadSys 2026
 - ACM MobiCom Demos, 2025.
-- ACM MobiCom Artifact Evaluation, 2025.
+- ACM MobiCom Artifact Evaluation, 2025, 2026.
 - ACM MobiSys Artifact Evaluation, 2024, 2025, 2026.
 - ACM SenSys Artifact Evaluation, 2024.
 - NDSS Artifact Evaluation, 2026
