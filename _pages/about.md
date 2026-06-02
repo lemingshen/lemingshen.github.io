@@ -129,6 +129,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
+- The 21st International Conference on Green, Pervasive, and Cloud Computing (GPC 2026).
 - IEEE MASS, 2026.
 - ACM MobiSys Demos, 2026
 - ACM MobiSys Workshop -- AutoSys 2026
@@ -137,7 +138,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM MobiCom Artifact Evaluation, 2025, 2026.
 - ACM MobiSys Artifact Evaluation, 2024, 2025, 2026.
 - ACM SenSys Artifact Evaluation, 2024.
-- NDSS Artifact Evaluation, 2026
+- NDSS Artifact Evaluation, 2026, 2027.
 - ACM CCS Artifact Evaluation, 2025, 2026.
 - IEEE S&P Artifact Evaluation, 2026.
 - USEIX Security Artifact Evaluation, 2026.
