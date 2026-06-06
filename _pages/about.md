@@ -73,6 +73,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <summary style="cursor: pointer">Full List</summary>
   <ul>
     <li>
+      <b><span style="color: blue">[MobiSys'26 Workshop AutoSys]</span> Automating Model Deployment on Mobile Devices</b><br>
+      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      [<a href="/assets/publication/others/autodeploy.pdf" target="_blank">PDF</a>]
+    </li>
+    <li>
       <b><span style="color: blue">[MobiUK'26]</span> Towards Automated Mobile Model Deployment</b><br>
       <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
       [<a href="/assets/publication/others/mobiuk.pdf" target="_blank">PDF</a>]
