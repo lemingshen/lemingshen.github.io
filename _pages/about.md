@@ -180,8 +180,9 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Talks
 
-- **Towards Autonomous Development of Mobile Sensing Applications with Agentic LLMs** @ The University of Cambridge, April 28th, 2026.
-- **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1st, 2026. <br>[[Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)] [[Slides](/assets/talks/flower_monthly.pdf)]
+- **Towards Agentic AIoT Application Lifecycle** @ Imperial College London, June 8, 2026. Than you [Prof. Hamed Haddadi](https://haddadi.github.io/about/)!
+- **Towards Autonomous Development of Mobile Sensing Applications with Agentic LLMs** @ The University of Cambridge, April 28, 2026. Thank you [Dr. Qiang Yang](https://www.cl.cam.ac.uk/~qy258/) and [Prof. Cecilia Mascolo](https://www.cl.cam.ac.uk/~cm542/)!
+- **Towards Efficient Federated Leanring on Edge** @ Flower Lab Monthly, April 1, 2026. Thank you [Prof. Nicholas Lane](https://mlsys.cst.cam.ac.uk/) and [Dr. Heng Pan](https://www.linkedin.com/in/heng-pan-117915247/)! <br>[[Video](https://www.youtube.com/live/lljaid-vp4s?t=1385s)] [[Slides](/assets/talks/flower_monthly.pdf)]
 
 ## Teaching
 
