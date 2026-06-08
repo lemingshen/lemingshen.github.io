@@ -88,7 +88,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
       [<a href="/assets/publication/others/rising_star.pdf" target="_blank">PDF</a>]
     </li>
     <li>
-      <b><span style="color: blue">[Getmobile'26]</span> One Workflow Doesn't Fit All: Adaptive Workflows for Edge AI Development</b><br>
+      <b><span style="color: blue">[GetMobile'26]</span> One Workflow Doesn't Fit All: Adaptive Workflows for Edge AI Development</b><br>
       <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
       [<a href="https://dl.acm.org/doi/abs/10.1145/3810919.3810921" target="_blank">PDF</a>]
     </li>
