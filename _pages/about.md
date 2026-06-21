@@ -132,6 +132,9 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ## Professional Services
 
+### Organizing Committee
+- Organizing committee of The 2nd Edition of Inscitech Meet on Robotics and Automation Technologies ([IMROBOTECH2027](https://inscitechsummits.com/2027/imrobotech))
+
 ### TPC Member
 
 - The 21st International Conference on Green, Pervasive, and Cloud Computing (GPC 2026).
