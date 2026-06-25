@@ -137,6 +137,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
+- ACM UbiComp Demo, 2026.
 - The 21st International Conference on Green, Pervasive, and Cloud Computing (GPC 2026).
 - IEEE MASS, 2026.
 - ACM MobiSys Demos, 2026
