@@ -37,34 +37,36 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, **Leming Shen**, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] [[Slides](https://unixyhuang.github.io/pubs/blindfold_slides.pdf)] [[Video](https://www.youtube.com/watch?v=Y6MsFS8bGVU&t=40s)] &nbsp; (Acceptance ratio: 52/263=19.8%)
+- **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie <br> [[PDF]()] [[Slides]()] [[Video]()] 
 
-- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> **Leming Shen**, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%)
+- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] [[Slides](https://unixyhuang.github.io/pubs/blindfold_slides.pdf)] [[Video](https://www.youtube.com/watch?v=Y6MsFS8bGVU&t=40s)] &nbsp; (Acceptance ratio: 52/263=19.8%)
 
-- **<font color=blue>[MobiCom'25]</font> AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications** <br> **Leming Shen**, Qiang Yang, Yuanqing Zheng, Mo Li <br> [[PDF](/assets/publication/conference/AutoIOT/paper.pdf)] [[Code](https://github.com/lemingshen/AutoIOT)] [[Web](https://lemingshen.github.io/projects/autoiot)] [[Slides](/assets/publication/conference/AutoIOT/AutoIOT_presentation.pdf)] [[Demo Video](https://youtu.be/E0INJT9xEWg)] [[Presentation](https://youtu.be/D3nCfYMcNDs?si=bIQwSfjQiYBBnNVY)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} ![](/images/replicated.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 41/240=17.1%)<br>
+- **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%)
+
+- **<font color=blue>[MobiCom'25]</font> AutoIOT: LLM-Driven Automated Natural Language Programming for AIoT Applications** <br> <u>Leming Shen</u>, Qiang Yang, Yuanqing Zheng, Mo Li <br> [[PDF](/assets/publication/conference/AutoIOT/paper.pdf)] [[Code](https://github.com/lemingshen/AutoIOT)] [[Web](https://lemingshen.github.io/projects/autoiot)] [[Slides](/assets/publication/conference/AutoIOT/AutoIOT_presentation.pdf)] [[Demo Video](https://youtu.be/E0INJT9xEWg)] [[Presentation](https://youtu.be/D3nCfYMcNDs?si=bIQwSfjQiYBBnNVY)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} ![](/images/replicated.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 41/240=17.1%)<br>
   AutoIOT is now embedded into GitHub Copilot, try our VS Code Extension with one click [here](https://marketplace.visualstudio.com/items?itemName=LemingShen.autoiot)!
 
-- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [[Slides](/assets/publication/conference/fedconv/slides.pdf)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%)
+- **<font color=blue>[MobiSys'24]</font> FedConv: A Learning-on-Model Paradigm for Heterogeneous Federated Clients** <br> <u>Leming Shen</u>, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](/assets/publication/conference/fedconv/paper.pdf)] [[Code](https://github.com/lemingshen/fedconv)] [[Web](https://lemingshen.github.io/projects/fedconv)] [[Slides](/assets/publication/conference/fedconv/slides.pdf)] ![](/images/available.png){:height="22px" width="22px"} ![](/images/functional.png){:height="22px" width="22px"} ![](/images/reusable.png){:height="22px" width="22px"} &nbsp; (Acceptance ratio: 43/263=16.3%)
 
-- **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
+- **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, <u>Leming Shen</u>, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
 
-- **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> _Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_ <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
+- **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> _Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_ <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
 
-- **<font color=blue>[ICDCS'21]</font> MandiPass: Secure and Usable User Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Xian Xu, Kui Ren_ <br> [[PDF](/assets/publication/conference/mandipass/paper.pdf)] [[Video](https://www.youtube.com/watch?v=N0pZDBmpZ_A)]
+- **<font color=blue>[ICDCS'21]</font> MandiPass: Secure and Usable User Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Xian Xu, Kui Ren_ <br> [[PDF](/assets/publication/conference/mandipass/paper.pdf)] [[Video](https://www.youtube.com/watch?v=N0pZDBmpZ_A)]
 
 ### Journal
 
-- **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, **Leming Shen**, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
+- **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
-- **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, **Leming Shen**, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
+- **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
-- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> **Leming Shen**, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
+- **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> <u>Leming Shen</u>, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
-- **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> _Kaiyan Cui, Qiang Yang, **Leming Shen**, Yuanqing Zheng, Fu Xiao, Jinsong Han_ <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
+- **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> _Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Fu Xiao, Jinsong Han_ <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
-- **<font color=blue>[TMC]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> _Ming Gao, Lingfeng Zhang, **Leming Shen**, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
+- **<font color=blue>[TMC]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> _Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
 
-- **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, **Leming Shen**, Jinsong Han, Kui Ren_ <br>
+- **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Kui Ren_ <br>
   [[PDF](/assets/publication/journal/mandipass/paper.pdf)]
 
 ### Poster/Demo/Workshop
@@ -74,57 +76,57 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <ul>
     <li>
       <b><span style="color: blue">[MobiSys'26 Workshop AutoSys]</span> Automating Model Deployment on Mobile Devices</b><br>
-      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
       [<a href="/assets/publication/others/autodeploy.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiUK'26]</span> Towards Automated Mobile Model Deployment</b><br>
-      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
       [<a href="/assets/publication/others/mobiuk.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiSys'26 Rising Starts Forum]</span> Towards Automated, Resilient, and Robust AIoT</b><br>
-      <i><b>Leming Shen</b></i><br>
+      <i><u>Leming Shen</u></i><br>
       [<a href="/assets/publication/others/rising_star.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[GetMobile'26]</span> One Workflow Doesn't Fit All: Adaptive Workflows for Edge AI Development</b><br>
-      <i><b>Leming Shen</b>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
       [<a href="https://dl.acm.org/doi/abs/10.1145/3810919.3810921" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[INFOCOM'26 EIN Workshop]</span> Federated Self-Evolving Embodied AI Agents</b><br>
-      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/FSEAI.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiCom'25]</span> Poster: Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models</b><br>
-      <i>Xinyu Huang, <b>Leming Shen</b>, Zijing Ma, Yuanqing Zheng</i><br>
+      <i>Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/homellama_poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[CCS'25]</span> Poster: LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework</b><br>
-      <i>Zijing Ma, <b>Leming Shen</b>, Xinyu Huang, Yuanqing Zheng</i><br>
+      <i>Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/llmware_poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiSys'25]</span> Poster: Towards Federated Embodied AI with FEAI</b><br>
-      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/FEAI/poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiCom'24]</span> IoTCoder: A Copilot for IoT Application Development</b><br>
-      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/IoTCoder/paper.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[ICDCS'23]</span> FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing</b><br>
-      <i><b>Leming Shen</b>, Yuanqing Zheng</i><br>
+      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
       [<a href="/assets/publication/others/FedDM/paper.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[SenSys'22]</span> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars</b><br>
-      <i>Kaiyan Cui, Qiang Yang, <b>Leming Shen</b>, Yuanqing Zheng, Jinsong Han</i><br>
+      <i>Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Jinsong Han</i><br>
       [<a href="/assets/publication/others/mmRipple/paper.pdf" target="_blank">PDF</a>] [<a href="[/assets/publication/others/mmRipple/paper.pdf](https://www.youtube.com/watch?v=BLBkSKZUIHc)" target="_blank">Video</a>]
     </li>
   </ul>
