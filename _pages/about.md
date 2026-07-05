@@ -37,7 +37,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie <br> [[PDF]()] [[Slides]()] [[Video]()] 
+- **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie
 
 - **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] [[Slides](https://unixyhuang.github.io/pubs/blindfold_slides.pdf)] [[Video](https://www.youtube.com/watch?v=Y6MsFS8bGVU&t=40s)] &nbsp; (Acceptance ratio: 52/263=19.8%)
 
