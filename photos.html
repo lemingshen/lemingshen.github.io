@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sheet — Photo Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1a1816;
+    --charcoal-deep: #121110;
+    --ivory: #ede7dc;
+    --ivory-dim: #b7b0a2;
+    --brass: #c9924a;
+    --rust: #8b3a3a;
+    --olive: #6b7455;
+    --frame-bg: #24211d;
+    --frame-border: #3a352e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--charcoal);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    padding: 4.5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--frame-border);
+    position: relative;
+  }
+
+  header::before,
+  header::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 10px;
+    background-image: radial-gradient(circle, var(--charcoal-deep) 3px, transparent 3px);
+    background-size: 24px 10px;
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+  header::before { top: 0; }
+  header::after { bottom: -1px; }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.01em;
+    color: var(--ivory);
+  }
+
+  .roll-meta {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    font-weight: 600;
+  }
+
+  .subtitle {
+    margin-top: 0.9rem;
+    color: var(--ivory-dim);
+    font-size: 0.95rem;
+    max-width: 40ch;
+    margin-inline: auto;
+  }
+
+  /* ---------- Gallery grid ---------- */
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+  }
+
+  .sheet {
+    columns: 4 260px;
+    column-gap: 1.1rem;
+  }
+
+  @media (max-width: 700px) {
+    .sheet { columns: 2 160px; }
+  }
+
+  .frame {
+    break-inside: avoid;
+    margin-bottom: 1.1rem;
+    background: var(--frame-bg);
+    border: 1px solid var(--frame-border);
+    border-radius: 2px;
+    padding: 10px 10px 14px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .frame:hover, .frame:focus-visible {
+    transform: translateY(-4px);
+    border-color: var(--brass);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.45);
+    outline: none;
+  }
+
+  .frame img {
+    width: 100%;
+    display: block;
+    border-radius: 1px;
+    filter: saturate(0.92) contrast(1.02);
+  }
+
+  .frame-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .frame-num {
+    font-size: 0.72rem;
+    color: var(--brass);
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+
+  .frame-tag {
+    font-size: 0.68rem;
+    color: var(--ivory-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Light table (lightbox) ---------- */
+  .light-table {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(201,146,74,0.08), var(--charcoal-deep) 70%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 2rem;
+  }
+
+  .light-table.open {
+    display: flex;
+    animation: fadeIn 0.25s ease;
+  }
+
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .light-table figure {
+    margin: 0;
+    max-width: min(88vw, 900px);
+    text-align: center;
+  }
+
+  .light-table img {
+    max-width: 100%;
+    max-height: 72vh;
+    border: 1px solid var(--frame-border);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    border-radius: 2px;
+  }
+
+  .light-table figcaption {
+    margin-top: 1rem;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--ivory);
+  }
+
+  .light-table .meta-row {
+    margin-top: 0.4rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+
+  .lt-close, .lt-prev, .lt-next {
+    position: fixed;
+    background: none;
+    border: 1px solid var(--frame-border);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.6rem 0.9rem;
+    border-radius: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .lt-close:hover, .lt-prev:hover, .lt-next:hover {
+    border-color: var(--brass);
+    color: var(--brass);
+  }
+
+  .lt-close { top: 1.5rem; right: 1.5rem; }
+  .lt-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+  .lt-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
+
+  @media (max-width: 700px) {
+    .lt-prev, .lt-next { padding: 0.5rem 0.7rem; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem 3.5rem;
+    color: var(--ivory-dim);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .frame, .light-table { transition: none; animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="roll-meta">Roll No. 01 · Leming Shen</div>
+  <h1>Personal Photo Gallery</h1>
+  <p class="subtitle">A gallery of frames taken travelling around the world.</p>
+</header>
+
+<main>
+  <div class="sheet" id="sheet"></div>
+</main>
+
+<footer>Click any frame to bring it to the light table · Use ← → to move between frames · Esc to close</footer>
+
+<div class="light-table" id="lightTable" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lt-close" id="ltClose" aria-label="Close viewer">✕ Close</button>
+  <button class="lt-prev" id="ltPrev" aria-label="Previous photo">←</button>
+  <figure>
+    <img id="ltImg" src="" alt="">
+    <figcaption id="ltCaption"></figcaption>
+    <div class="meta-row" id="ltMeta"></div>
+  </figure>
+  <button class="lt-next" id="ltNext" aria-label="Next photo">→</button>
+</div>
+
+<script>
+  // Gallery data — put your image files in a "photos" folder next to this
+  // HTML file, then list each filename below with a caption and tag.
+  // Example folder structure:
+  //   gallery.html
+  //   images/personal/
+  //     photo-01.jpg
+  //     photo-02.jpg
+  //     ...
+  const photos = [
+    { file: "images/personal/hk6.jpg", caption: "大嶼山山頂，2023年12月", tag: "大嶼山，香港🇭🇰" },
+    { file: "images/personal/hk2.jpg", caption: "太平山山頂俯瞰港島，2024年3月",         tag: "太平山，香港🇭🇰" },
+    { file: "images/personal/hk3.jpg", caption: "中環（右上角的是中銀大廈），2024年3月",                tag: "中環，香港🇭🇰" },
+    { file: "images/personal/hk4.jpg", caption: "維多利亞港（對面是港島天際線），2024年7月",       tag: "維多利亞港，香港🇭🇰" },
+    { file: "images/personal/hk5.jpg", caption: "太平山盧吉道俯瞰九龍半島（最高的建築是環球貿易廣場），2025年10月",         tag: "太平山，香港🇭🇰" },
+    { file: "images/personal/hk1.jpg", caption: "石澳沙灘（《喜劇之王》曾在附近取景），2025年3月", tag: "石澳沙灘，香港🇭🇰" },
+    { file: "images/personal/jp1.jpg", caption: "渋谷市中心，2024年6月",  tag: "渋谷，東京都，日本🇯🇵" },
+    { file: "images/personal/jp2.jpg", caption: "忠犬八公雕像，渋谷车站旁，2024年6月",               tag: "渋谷，東京都，日本🇯🇵" },
+    { file: "images/personal/jp3.jpg", caption: "秋葉原市中心，2024年6月",       tag: "秋葉原，東京都，日本🇯🇵" },
+    { file: "images/personal/jp4.jpg", caption: "秋葉原市中心，2024年6月",       tag: "秋葉原，東京都，日本🇯🇵" },
+    { file: "images/personal/jp5.jpg", caption: "銀座市中心，2024年6月",       tag: "銀座，東京都，日本🇯🇵" },
+    { file: "images/personal/us1.jpg", caption: "Washington Monument, December, 2024",      tag: "Washington D.C., USA🇺🇸" },
+    { file: "images/personal/us2.jpg", caption: "Major General James B. McPherson Memorial, December, 2024",       tag: "Washington D.C., USA🇺🇸" },
+    { file: "images/personal/us3.jpg", caption: "Lieutenant General George Washington, December, 2024",          tag: "Washington D.C., USA🇺🇸" },
+    { file: "images/personal/us4.jpg", caption: "Mesa Court, May 2025",          tag: "Irvine, California, USA🇺🇸" },
+    { file: "images/personal/us5.jpg", caption: "Balboa Island, May 2025",          tag: "Irvine, California, USA🇺🇸" },
+    { file: "images/personal/us6.jpg", caption: "West cost of California, May 2025",          tag: "California, USA🇺🇸" },
+    { file: "images/personal/us7.jpg", caption: "Anaheim GardenWalk, June 2025",          tag: "Anaheim, California, USA🇺🇸" },
+    { file: "images/personal/us8.jpg", caption: "Anaheim GardenWalk, June 2025",          tag: "Anaheim, California, USA🇺🇸" },
+    { file: "images/personal/us9.jpg", caption: "Gun shooting in FT3 Tactical, June 2025",          tag: "Anaheim, California, USA🇺🇸" },
+    { file: "images/personal/uk1.jpg", caption: "MI6 (where 007, or James Bond, works), April, 2026",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk2.jpg", caption: "Buckingham Palace, April, 2026",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk3.jpg", caption: "With the cavalry at Horse Guards, April, 2026",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk4.jpg", caption: "A very traditional British restaurant, The Admiralty, Trafalgar Square, April, 2026",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk5.jpg", caption: "Tower Bridge, April, 2026",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk6.jpg", caption: "Westminster Abbey (left) and Big Ben (right), April, 2026)",          tag: "London, UK🇬🇧" },
+    { file: "images/personal/uk7.jpg", caption: "King's College at The University of Cambridge, April, 2026",          tag: "Cambridge, UK🇬🇧" },
+    { file: "images/personal/uk8.jpg", caption: "徐志摩的再別康橋, King's College at The University of Cambridge, April, 2026",          tag: "Cambridge, UK🇬🇧" },
+    { file: "images/personal/uk9.jpg", caption: "The apple tree that Newton discovered gravity under, April, 2026",          tag: "Cambridge, UK🇬🇧" },
+    { file: "images/personal/fr1.jpg", caption: "National Fort in Saint-Malo, May 2026",          tag: "Saint-Malo, France🇫🇷" },
+    { file: "images/personal/fr2.jpg", caption: "National Fort in Saint-Malo, May 2026",          tag: "Saint-Malo, France🇫🇷" },
+    { file: "images/personal/fr3.jpg", caption: "A local restaurant, O'BikiniBé, May 2026",          tag: "Saint-Malo, France🇫🇷" },
+    { file: "images/personal/fr4.jpg", caption: "Cathédrale Notre-Dame de Paris (巴黎圣母院), shot on the Seine, May 2026",          tag: "Paris, France🇫🇷" },
+    { file: "images/personal/fr5.jpg", caption: "Eiffel Tower, May 2026",          tag: "Paris, France🇫🇷" },
+    { file: "images/personal/fr6.jpg", caption: "Eiffel Tower during the night, May 2026",          tag: "Paris, France🇫🇷" },
+  ];
+
+  const sheet = document.getElementById('sheet');
+  const lightTable = document.getElementById('lightTable');
+  const ltImg = document.getElementById('ltImg');
+  const ltCaption = document.getElementById('ltCaption');
+  const ltMeta = document.getElementById('ltMeta');
+  let currentIndex = 0;
+
+  photos.forEach((p, i) => {
+    const frame = document.createElement('div');
+    frame.className = 'frame';
+    frame.tabIndex = 0;
+    frame.setAttribute('role', 'button');
+    frame.setAttribute('aria-label', `Open photo: ${p.caption}`);
+
+    frame.innerHTML = `
+      <img src="${p.file}" alt="${p.caption}" loading="lazy">
+      <div class="frame-foot">
+        <span class="frame-num">#${String(i + 1).padStart(2, '0')}</span>
+        <span class="frame-tag">${p.tag}</span>
+      </div>
+    `;
+
+    frame.addEventListener('click', () => openTable(i));
+    frame.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openTable(i); }
+    });
+
+    sheet.appendChild(frame);
+  });
+
+  function openTable(i) {
+    currentIndex = i;
+    renderTable();
+    lightTable.classList.add('open');
+    document.getElementById('ltClose').focus();
+  }
+
+  function renderTable() {
+    const p = photos[currentIndex];
+    ltImg.src = p.file;
+    ltImg.alt = p.caption;
+    ltCaption.textContent = p.caption;
+    ltMeta.textContent = `Frame #${String(currentIndex + 1).padStart(2, '0')} · ${p.tag}`;
+  }
+
+  function closeTable() {
+    lightTable.classList.remove('open');
+  }
+
+  function nextPhoto() {
+    currentIndex = (currentIndex + 1) % photos.length;
+    renderTable();
+  }
+
+  function prevPhoto() {
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+    renderTable();
+  }
+
+  document.getElementById('ltClose').addEventListener('click', closeTable);
+  document.getElementById('ltNext').addEventListener('click', nextPhoto);
+  document.getElementById('ltPrev').addEventListener('click', prevPhoto);
+
+  lightTable.addEventListener('click', (e) => {
+    if (e.target === lightTable) closeTable();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightTable.classList.contains('open')) return;
+    if (e.key === 'Escape') closeTable();
+    if (e.key === 'ArrowRight') nextPhoto();
+    if (e.key === 'ArrowLeft') prevPhoto();
+  });
+</script>
+
+</body>
+</html>
