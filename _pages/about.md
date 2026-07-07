@@ -18,10 +18,9 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Research Interests
 
-- Large Language Models & Embodied AI
-- Mobile/Edge Computing
-- AIoT Applications & Security
-- Wireless Sensing
+- Robotics & Embodied AI
+- Large Language Models (LLMs)
+- Agentic AI
 
 ### Education
 
