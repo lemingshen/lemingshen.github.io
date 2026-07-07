@@ -50,23 +50,23 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - **<font color=blue>[INFOCOM'24]</font> Talk2Radar: Talking to mmWave Radars via Smartphone Speaker** <br> Kaiyan Cui, <u>Leming Shen</u>, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://www4.comp.polyu.edu.hk/~csyqzheng/papers/Talk2Radar_INFOCOM24.pdf)]
 
-- **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> _Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_ <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
+- **<font color=blue>[SenSys'22]</font> KITE: Exploring the Practical Threat from Acoustic Transduction Attacks on Inertial Sensors** <br> Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren <br> [[PDF](/assets/publication/conference/kite/paper.pdf)]
 
-- **<font color=blue>[ICDCS'21]</font> MandiPass: Secure and Usable User Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Xian Xu, Kui Ren_ <br> [[PDF](/assets/publication/conference/mandipass/paper.pdf)] [[Video](https://www.youtube.com/watch?v=N0pZDBmpZ_A)]
+- **<font color=blue>[ICDCS'21]</font> MandiPass: Secure and Usable User Authentication via Earphone IMU** <br> Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Xian Xu, Kui Ren <br> [[PDF](/assets/publication/conference/mandipass/paper.pdf)] [[Video](https://www.youtube.com/watch?v=N0pZDBmpZ_A)]
 
 ### Journal
 
-- **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> _Xin Li, Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie_ <br> [[PDF](https://arxiv.org/abs/2603.18604)]
+- **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> Xin Li, Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
-- **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> _Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng_ <br> [[PDF](https://arxiv.org/abs/2507.08878)]
+- **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](https://arxiv.org/abs/2507.08878)]
 
 - **<font color=blue>[TMC]</font> Hierarchical and Heterogeneous Federated Learning via a Learning-on-Model Paradigm** <br> <u>Leming Shen</u>, Qiang Yang, Kaiyan Cui, Yuanqing Zheng, Xiao-Yong Wei, Jianwei Liu, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/11059813)]
 
-- **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> _Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Fu Xiao, Jinsong Han_ <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
+- **<font color=blue>[TMC]</font> Towards ISAC-Empowered mmWave Radars by Capturing Modulated Vibrations** <br> Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Fu Xiao, Jinsong Han <br> [[PDF](https://ieeexplore.ieee.org/document/10637248)]
 
-- **<font color=blue>[TMC]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> _Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren_<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
+- **<font color=blue>[TMC]</font> Exploring Practical Acoustic Transduction Attacks on Inertial Sensors in MDOF Systems** <br> Ming Gao, Lingfeng Zhang, <u>Leming Shen</u>, Xiang Zou, Jinsong Han, Feng Lin, Kui Ren<br>[[PDF](/assets/publication/journal/kite/paper.pdf)]
 
-- **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> _Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Kui Ren_ <br>
+- **<font color=blue>[TMC]</font> Secure User Verification and Continuous Authentication via Earphone IMU** <br> Jianwei Liu, Wenfan Song, <u>Leming Shen</u>, Jinsong Han, Kui Ren <br>
   [[PDF](/assets/publication/journal/mandipass/paper.pdf)]
 
 ### Poster/Demo/Workshop
@@ -76,57 +76,57 @@ Please find more information about me in my [CV](/assets/CV.pdf).
   <ul>
     <li>
       <b><span style="color: blue">[MobiSys'26 Workshop AutoSys]</span> Automating Model Deployment on Mobile Devices</b><br>
-      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu<br>
       [<a href="/assets/publication/others/autodeploy.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiUK'26]</span> Towards Automated Mobile Model Deployment</b><br>
-      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu<br>
       [<a href="/assets/publication/others/mobiuk.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiSys'26 Rising Starts Forum]</span> Towards Automated, Resilient, and Robust AIoT</b><br>
-      <i><u>Leming Shen</u></i><br>
+      <u>Leming Shen</u><br>
       [<a href="/assets/publication/others/rising_star.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[GetMobile'26]</span> One Workflow Doesn't Fit All: Adaptive Workflows for Edge AI Development</b><br>
-      <i><u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu</i><br>
+      <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng, Chris Xiaoxuan Lu<br>
       [<a href="https://dl.acm.org/doi/abs/10.1145/3810919.3810921" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[INFOCOM'26 EIN Workshop]</span> Federated Self-Evolving Embodied AI Agents</b><br>
-      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
+      <u>Leming Shen</u>, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/FSEAI.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiCom'25]</span> Poster: Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models</b><br>
-      <i>Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng</i><br>
+      Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/homellama_poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[CCS'25]</span> Poster: LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework</b><br>
-      <i>Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Yuanqing Zheng</i><br>
+      Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/llmware_poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiSys'25]</span> Poster: Towards Federated Embodied AI with FEAI</b><br>
-      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
+      <u>Leming Shen</u>, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/FEAI/poster.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[MobiCom'24]</span> IoTCoder: A Copilot for IoT Application Development</b><br>
-      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
+      <u>Leming Shen</u>, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/IoTCoder/paper.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[ICDCS'23]</span> FedDM: Data and Model Heterogeneity-Aware Federated Learning via Dynamic Weight Sharing</b><br>
-      <i><u>Leming Shen</u>, Yuanqing Zheng</i><br>
+      <u>Leming Shen</u>, Yuanqing Zheng<br>
       [<a href="/assets/publication/others/FedDM/paper.pdf" target="_blank">PDF</a>]
     </li>
     <li>
       <b><span style="color: blue">[SenSys'22]</span> Poster: Integrated Sensing and Communication between Daily Devices and mmWave Radars</b><br>
-      <i>Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Jinsong Han</i><br>
+      Kaiyan Cui, Qiang Yang, <u>Leming Shen</u>, Yuanqing Zheng, Jinsong Han<br>
       [<a href="/assets/publication/others/mmRipple/paper.pdf" target="_blank">PDF</a>] [<a href="[/assets/publication/others/mmRipple/paper.pdf](https://www.youtube.com/watch?v=BLBkSKZUIHc)" target="_blank">Video</a>]
     </li>
   </ul>
@@ -201,7 +201,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Contact
 
 - ✉️ <leming.shen@connect.polyu.hk>, <leming.shen@ucl.ac.uk>, <zju.slm@gmail.com>
-- 🏠 QT404, Department of Computing, Chow Yei Ching Building, The Hong Kong Polytechnic University, Hong Kong SAR, China.
+- 🏠 QT404, Department of Computing, Chow Yei Ching Building, The Hong Kong Polytechnic University, Hong Kong.
 - <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.9996711329782!2d114.18011306754038!3d22.304651755932625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400e7cc7f4a45%3A0x521024fd522b46ba!2sThe%20Hong%20Kong%20Polytechnic%20University%20Chow%20Yei%20Ching%20Building!5e0!3m2!1sen!2shk!4v1699627484481!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
