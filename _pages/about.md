@@ -162,6 +162,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM Transactions on Senosr Networks (ToSN) 2024.
 - IEEE Transactions on Wireless Communications (TWC) 2023, 2024.
 - ACM IMWUT/UbiComp 2023, 2024, 2025.
+- IEEE Network Magazine, 2026.
 - Expert Systems with Applications (ESWA), 2025, 2026.
 - Sensing and Bio-Sensing Research, 2025.
 - Computers and Electrical Engineering, 2025, 2026.
