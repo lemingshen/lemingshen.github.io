@@ -141,6 +141,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM UbiComp Workshop -- [EIoT 2026](https://eiot-workshop.github.io/), Welcome submission!
 - ACM UbiComp Demo, 2026.
 - The 21st International Conference on Green, Pervasive, and Cloud Computing (GPC 2026).
+- The Second International Conference on AI-enabled Unmanned Autonomous Vehicles and Internet of Things for Critical Services (AIVTS 2026).
 - IEEE MASS, 2026.
 - ACM MobiSys Demos, 2026
 - ACM MobiSys Workshop -- AutoSys 2026
