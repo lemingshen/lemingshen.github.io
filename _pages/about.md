@@ -138,7 +138,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
-- ACM UbiComp Workshop -- [EIoT 2026](https://eiot-workshop.github.io/), Welcome submission!
+- ACM MobiCom Workshop -- HumanSys 2026.
+- ACM UbiComp Workshop -- EIoT 2026.
 - ACM UbiComp Demo, 2026.
 - The 21st International Conference on Green, Pervasive, and Cloud Computing (GPC 2026).
 - The Second International Conference on AI-enabled Unmanned Autonomous Vehicles and Internet of Things for Critical Services (AIVTS 2026).
