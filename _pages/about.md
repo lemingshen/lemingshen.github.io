@@ -12,7 +12,7 @@ redirect_from:
 
 ---
 
-Leming Shen is currently a fourth-year PhD student of Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He is/was also a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Robotics, Embodied AI, Large Language Models, and Agentic AI.
+Leming Shen is currently a fourth-year PhD student of Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He was a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Robotics, Embodied AI, Large Language Models, and Agentic AI.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
@@ -35,6 +35,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ---
 
 ### Conference
+
+- **<font color=blue>[RAID'26]</font> Concept Drifts, Detector Evolves: Malware Detection Made Easy with LLMalware** <br> Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Kai Zhou, Yuanqing Zheng <br> [PDF]
 
 - **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](http://arxiv.org/abs/2607.05038)]
 
