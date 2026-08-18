@@ -177,6 +177,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Engineering Applications of Artificial Intelligence, 2026.
 - Information & Communications Technology Express (ICT Express), 2026.
 - Scientific Reports, 2026.
+- Array, 2026.
 
 ## Honors & Awards
 
