@@ -178,6 +178,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Information & Communications Technology Express (ICT Express), 2026.
 - Scientific Reports, 2026.
 - Array, 2026.
+- Journal of Information Security and Applications, 2026.
 
 ## Honors & Awards
 
