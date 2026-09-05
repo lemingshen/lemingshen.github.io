@@ -174,11 +174,12 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Future Generation Computer Systems, 2026.
 - SoftwareX, 2026.
 - Neural Networks (NEUNET), 2026.
-- Engineering Applications of Artificial Intelligence, 2026.
+- Engineering Applications of Artificial Intelligence (EAAI), 2026.
 - Information & Communications Technology Express (ICT Express), 2026.
 - Scientific Reports, 2026.
 - Array, 2026.
 - Journal of Information Security and Applications, 2026.
+- International Journal of Human-Computer Interaction, 2026.
 
 ## Honors & Awards
 
