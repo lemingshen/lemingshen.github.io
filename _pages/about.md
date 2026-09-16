@@ -12,7 +12,7 @@ redirect_from:
 
 ---
 
-Leming Shen is currently a fourth-year PhD student of Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He was a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Robotics, Embodied AI, Large Language Models, and Agentic AI.
+Leming Shen completes his PhD in Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He was a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Robotics, Embodied AI, Large Language Models, and Agentic AI.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
@@ -25,7 +25,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ### Education
 
 - Visiting PhD in _University College London_ (2026.02 - 2026.07)
-- Purchasing PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026 expected)
+- PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026)
 - B.S. degree from _Zhejiang University_ (2022)
 
 <br>
@@ -160,6 +160,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Invited Reviewer
 
+- Nature Communications Engineering, 2026.
 - ACM Transactions on Internet of Things (TIOT) 2025.
 - Computer Networks, 2025, 2026.
 - IEEE Transactions on Mobile Computing (TMC) 2024, 2026.
@@ -185,9 +186,9 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Honors & Awards
 
 - **<font color=blue>ACM MobiSys Rising Star, 2026.</font>**
+- **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 - **<font color=blue>ACM CCS Distinguished Artifact Evaluation Reviewer Award, 2025.</font>**
 - **<font color=blue>ACM SenSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
-- **<font color=blue>ACM MobiSys Distinguished Artifact Evaluation Reviewer Award, 2024.</font>**
 - Best Oral Presentation, PolyU COMP - HKUST (GZ) INFH Research Student Conference, 2025.
 - ACM MobiSys Student Travel Grant, 2024.
 - Outstanding Graduates of Zhejiang University, awarded on Undergraduate period, 2022.
