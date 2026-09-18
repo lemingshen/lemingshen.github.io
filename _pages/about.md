@@ -184,6 +184,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Journal of Information Security and Applications, 2026.
 - International Journal of Human-Computer Interaction, 2026.
 - The Journal of Supercomputing, 2026.
+- Neurocomputing, 2026.
 
 ## Honors & Awards
 
