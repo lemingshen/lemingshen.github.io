@@ -186,6 +186,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - The Journal of Supercomputing, 2026.
 - Neurocomputing, 2026.
 - Discover Applied Sciences, 2026.
+- Information Fusion, 2026.
+- Journal of System Architecture, 2026.
 
 ## Honors & Awards
 
