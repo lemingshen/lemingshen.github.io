@@ -158,7 +158,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - NDSS Artifact Evaluation, 2026, 2027.
 - ACM CCS Artifact Evaluation, 2025, 2026.
 - IEEE S&P Artifact Evaluation, 2026.
-- USEIX Security Artifact Evaluation, 2026.
+- USENIX Security Artifact Evaluation, 2026.
 
 ### Invited Reviewer
 
