@@ -12,7 +12,7 @@ redirect_from:
 
 ---
 
-Leming Shen completes his PhD in Department of Computing, [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), under supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). He was a visiting PhD student of Department of Computer Science, [University College London (UCL)](https://www.ucl.ac.uk/), under the supervision of Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). He received B.S. degree in Software Engineering from College of Computer Science and Technology, [Zhejiang University (ZJU)](https://www.zju.edu.cn/), under supervision of Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests mainly lie in Robotics, Embodied AI, Large Language Models, and Agentic AI.
+**Leming Shen** is a Postdoctoral Fellow at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), where he also earned his Ph.D. under the supervision of Prof. [Yuanqing Zheng](https://www4.comp.polyu.edu.hk/~csyqzheng/). During his doctoral studies, he was a visiting Ph.D. student in the Department of Computer Science at [University College London (UCL)](https://www.ucl.ac.uk/), working with Prof. [Chris Xiaoxuan Lu](https://christopherlu.github.io/). Previously, he received his B.S. degree in Software Engineering from the College of Computer Science and Technology at [Zhejiang University (ZJU)](https://www.zju.edu.cn/), advised by Prof. [Jinsong Han](https://person.zju.edu.cn/hanjinsong). His research interests span Robotics, Embodied AI, Large Language Models (LLMs), Agentic AI, and AI for Education.
 
 Please find more information about me in my [CV](/assets/CV.pdf).
 
@@ -21,9 +21,11 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Robotics & Embodied AI
 - Large Language Models (LLMs)
 - Agentic AI
+- AI for Education
 
-### Education
+### Work Experience & Education
 
+- Postdoctoral Fellow at _The Hong Kong Polytechnic University_ (2026.10 - Present)
 - Visiting PhD in _University College London_ (2026.02 - 2026.07)
 - PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026)
 - B.S. degree from _Zhejiang University_ (2022)
