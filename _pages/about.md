@@ -57,7 +57,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Journal
 
-- **<font color=blue>[arXiv]</font> Seeing is Not Believing: Breaking the Physical-to-Digital Trust Boundary in Robotics** <br> <u>Leming Shen</u>, Shikai Geng, Yuanqing Zheng, Chris Xiaoxuan Lu <br> [[PDF](https://arxiv.org/abs/2609.08280v1)]
+- **<font color=blue>[arXiv]</font> Seeing is Not Believing: Breaking the Physical-to-Digital Trust Boundary in Robotics** <br> <u>Leming Shen</u>, Shikai Geng, Yuanqing Zheng, Chris Xiaoxuan Lu <br> [[PDF](https://arxiv.org/abs/2609.08280v1)] [[Video](https://youtu.be/ExeiGqUrnhQ?si=HQDLGpV3Q2nZVQtJ)]
 
 - **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> Xin Li, Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
@@ -142,6 +142,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
+- The Seventeenth International Conference on Mobile Services, Resources, and Users (MOBILITY 2027).
 - ACM MobiCom Workshop -- HumanSys 2026.
 - ACM UbiComp Workshop -- EIoT 2026.
 - ACM UbiComp Demo, 2026.
