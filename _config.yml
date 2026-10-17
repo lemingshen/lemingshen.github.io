@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Leming Shen | The Hong Kong Polytechnic University"
 title_separator          : "-"
 name                     : &name "Leming Shen"
-description              : &description "Postdoctoral Fellow at The Hong Kong Polytechnic University"
+description              : &description "Postdoc @ PolyU"
 url                      : https://lemingshen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lemingshen.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Leming Shen"
   avatar           : "photo.jpg"
-  bio              : "PhD student at The Hong Kong Polytechnic University"
+  bio              : "Postdoc @ PolyU"
   location         : "Hong Kong"
   employer         :
   pubmed           : 

@@ -144,6 +144,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### TPC Member
 
+- International Conference on Satellite Computing (Satellite 2026).
 - The Seventeenth International Conference on Mobile Services, Resources, and Users (MOBILITY 2027).
 - ACM MobiCom Workshop -- HumanSys 2026.
 - ACM UbiComp Workshop -- EIoT 2026.
