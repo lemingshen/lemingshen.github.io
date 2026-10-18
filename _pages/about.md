@@ -38,6 +38,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
+- **<font color=blue>[UbiComp'27 & IMWUT]</font> KGIoT: Grounding LLM Agents in Actionable Spaces for Reliable Smart Home Automation** <br> Linya Fu, <u>Leming Shen</u>, Yuanqing Zheng <br> [[PDF]](/assets/publication/conference/KGIoT.pdf)
+
 - **<font color=blue>[RAID'26]</font> Concept Drifts, Detector Evolves: Malware Detection Made Easy with LLMalware** <br> Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Kai Zhou, Yuanqing Zheng <br> [[PDF]](https://ma-zijing.github.io/publications/LLMalware_RAID2026.pdf)
 
 - **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](http://arxiv.org/abs/2607.05038)]
