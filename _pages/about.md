@@ -27,7 +27,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - Postdoctoral Fellow at _The Hong Kong Polytechnic University_ (2026.10 - Present)
 - Visiting PhD in _University College London_ (2026.02 - 2026.07)
-- PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026)
+- PhD degree in _The Hong Kong Polytechnic University_ (2022 - 2026) [[Thesis](/assets/publication/others/PhD_Thesis.pdf)]
 - B.S. degree from _Zhejiang University_ (2022)
 
 <br>
@@ -142,6 +142,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 ## Professional Services
 
 ### Organizing Committee
+
 - Organizing committee of The 2nd Edition of Inscitech Meet on Robotics and Automation Technologies ([IMROBOTECH2027](https://inscitechsummits.com/2027/imrobotech))
 
 ### TPC Member
