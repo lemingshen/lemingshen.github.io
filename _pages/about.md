@@ -63,6 +63,8 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 - **<font color=blue>[arXiv]</font> Seeing is Not Believing: Breaking the Physical-to-Digital Trust Boundary in Robotics** <br> <u>Leming Shen</u>, Shikai Geng, Yuanqing Zheng, Chris Xiaoxuan Lu <br> [[PDF](https://arxiv.org/abs/2609.08280v1)] [[Video](https://youtu.be/ExeiGqUrnhQ?si=HQDLGpV3Q2nZVQtJ)]
 
+- **<font color=blue>[arXiv]</font> AgentDP: Towards Automated Model Deployment for Heterogeneous Embedded AI Applications** <br> <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](https://arxiv.org/abs/2610.30760)]
+
 - **<font color=blue>[arXiv]</font> AutORAN: LLM-driven Natural Language Programming for Agile xApp Development** <br> Xin Li, Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](https://arxiv.org/abs/2603.18604)]
 
 - **<font color=blue>[TMC]</font> Towards Privacy-Preserving and Personalized Smart Homes via Tailored Small Language Models** <br> Xinyu Huang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](https://arxiv.org/abs/2507.08878)]
