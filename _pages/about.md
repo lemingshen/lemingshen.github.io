@@ -200,6 +200,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - Information Fusion, 2026.
 - Journal of System Architecture, 2026.
 - npj Digital Medicine, 2026.
+- Acta Psychologica Reports, 2026
 
 ## Honors & Awards
 
