@@ -38,13 +38,13 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 
 ### Conference
 
-- **<font color=blue>[UbiComp'27 & IMWUT]</font> KGIoT: Grounding LLM Agents in Actionable Spaces for Reliable Smart Home Automation** <br> Linya Fu, <u>Leming Shen</u>, Yuanqing Zheng <br> [[PDF]](/assets/publication/conference/KGIoT.pdf) [[Code](https://github.com/linyafu/KGIoT-artifact)]
+- **<font color=blue>[UbiComp'27 & IMWUT]</font> KGIoT: Grounding LLM Agents in Actionable Spaces for Reliable Smart Home Automation** <br> Linya Fu, <u>Leming Shen</u>, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/KGIoT.pdf)] [[Code](https://github.com/linyafu/KGIoT-artifact)]
 
 - **<font color=blue>[RAID'26]</font> Concept Drifts, Detector Evolves: Malware Detection Made Easy with LLMalware** <br> Zijing Ma, <u>Leming Shen</u>, Xinyu Huang, Kai Zhou, Yuanqing Zheng <br> [[PDF]](https://ma-zijing.github.io/publications/LLMalware_RAID2026.pdf)
 
 - **<font color=blue>[SIGCOMM'26]</font> RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations** <br> Shiming Yu, <u>Leming Shen</u>, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie <br> [[PDF](http://arxiv.org/abs/2607.05038)]
 
-- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] [[Slides](https://unixyhuang.github.io/pubs/blindfold_slides.pdf)] [[Video](https://www.youtube.com/watch?v=Y6MsFS8bGVU&t=40s)] &nbsp; (Acceptance ratio: 52/263=19.8%)
+- **<font color=blue>[SenSys'26]</font> Jailbreaking Embodied LLMs via Action-level Manipulation** <br> Xinyu Huang, Qiang Yang, <u>Leming Shen</u>, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/BlindFold/paper.pdf)] [[Slides](https://unixyhuang.github.io/pubs/blindfold_slides.pdf)] [[Video](https://www.youtube.com/watch?v=Y6MsFS8bGVU&t=40s)] [[Code](https://github.com/unixyhuang/blindfold)] &nbsp; (Acceptance ratio: 52/263=19.8%)
 
 - **<font color=blue>[SenSys'25]</font> GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development** <br> <u>Leming Shen</u>, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng <br> [[PDF](/assets/publication/conference/GPIoT/paper.pdf)] [[Code](https://github.com/lemingshen/GPIoT)] [[Web](https://lemingshen.github.io/projects/gpiot)] [[Slides](/assets/publication/conference/GPIoT/GPIoT_preseentation.pdf)] [[Presentation](https://youtu.be/Rsfs8Yt1Pwk)] &nbsp; (Acceptance ratio: 46/245=18.8%)
 
