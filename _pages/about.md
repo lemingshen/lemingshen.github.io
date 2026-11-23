@@ -165,7 +165,7 @@ Please find more information about me in my [CV](/assets/CV.pdf).
 - ACM MobiCom Demos, 2025.
 - ACM MobiCom Artifact Evaluation, 2025, 2026.
 - ACM MobiSys Artifact Evaluation, 2024, 2025, 2026.
-- ACM SenSys Artifact Evaluation, 2024.
+- ACM SenSys Artifact Evaluation, 2024, 2027.
 - NDSS Artifact Evaluation, 2026, 2027.
 - ACM CCS Artifact Evaluation, 2025, 2026.
 - IEEE S&P Artifact Evaluation, 2026.
