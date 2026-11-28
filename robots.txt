@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lemingshen.github.io/sitemap.xml
+Sitemap: https://lemingshen.github.io/Prism/sitemap.xml
